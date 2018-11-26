@@ -878,7 +878,7 @@
         "id": "f89322.b41b5ce",
         "type": "link out",
         "z": "cd75b7b8.8a7de8",
-        "name": "Tension",
+        "name": "Valeur de la tension",
         "links": [
             "4dd626f.1b21ed8"
         ],
@@ -900,7 +900,7 @@
             [
                 "39f379c8.6d2656",
                 "b466caba.2c2ec8",
-                "59be5fb8.e161a"
+                "ad8915bb.883098"
             ]
         ]
     },
@@ -909,7 +909,7 @@
         "type": "function",
         "z": "dea97b.67941688",
         "name": "Charge batterie",
-        "func": "var load = {};\nload.payload = (msg.payload*100)/52;\nload.payload = Math.round(num.payload*10)/10;\nreturn load;",
+        "func": "var load = {};\nload.payload = (msg.payload*100)/52;\nload.payload = Math.round(load.payload*10)/10;\nreturn load;",
         "outputs": 1,
         "noerr": 0,
         "x": 220,
@@ -976,27 +976,11 @@
         ]
     },
     {
-        "id": "59be5fb8.e161a",
-        "type": "function",
-        "z": "dea97b.67941688",
-        "name": "Tension batterie",
-        "func": "var tension = {};\ntension.payload = msg;\nreturn tension;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 220,
-        "y": 500,
-        "wires": [
-            [
-                "654d05e.4656bfc"
-            ]
-        ]
-    },
-    {
         "id": "654d05e.4656bfc",
         "type": "function",
         "z": "dea97b.67941688",
         "name": "Puissance absorbée",
-        "func": "var power = {};\npower.payload = tension.payload * msg.payload;\nreturn power;",
+        "func": "var power = {};\npower.payload = msg.payload * tension;\nreturn power;",
         "outputs": 1,
         "noerr": 0,
         "x": 440,
@@ -1026,6 +1010,22 @@
         "wires": [
             [
                 "5114d734.044c18"
+            ]
+        ]
+    },
+    {
+        "id": "ad8915bb.883098",
+        "type": "function",
+        "z": "dea97b.67941688",
+        "name": "Tension batterie",
+        "func": "var tension = {};\ntension.payload = msg.payload;\nreturn tension;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 220,
+        "y": 500,
+        "wires": [
+            [
+                "654d05e.4656bfc"
             ]
         ]
     }
