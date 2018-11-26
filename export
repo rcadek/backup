@@ -1,0 +1,794 @@
+[
+    {
+        "id": "dea97b.67941688",
+        "type": "tab",
+        "label": "Tableau de bord ",
+        "disabled": false,
+        "info": "Page principale du tableau de bord"
+    },
+    {
+        "id": "cd75b7b8.8a7de8",
+        "type": "tab",
+        "label": "Baptiste(oui c'est moi)",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "6bd2c6d2.207ca8",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "e9121bd6.41ebd8",
+        "type": "subflow",
+        "name": "Subflow 2",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "9de9ebc0.e891e8",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#c0392b",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#c0392b",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#c0392b",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#db695d",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#c0392b",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Tableau de bord - Challenge ÉducÉco - Lycée L. Rascol",
+            "hideToolbar": "false",
+            "allowSwipe": "true",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "15eb2e91.7ca2a1",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Tableau de bord",
+        "icon": "dns",
+        "order": 1
+    },
+    {
+        "id": "580da1de.bede3",
+        "type": "ui_group",
+        "z": "",
+        "name": "Vitesse",
+        "tab": "15eb2e91.7ca2a1",
+        "order": 1,
+        "disp": true,
+        "width": "10",
+        "collapse": true
+    },
+    {
+        "id": "6969920.2c3eb7",
+        "type": "ui_group",
+        "z": "",
+        "name": "Statistiques de la course",
+        "tab": "15eb2e91.7ca2a1",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "a0c3baf.c141e48",
+        "type": "ui_group",
+        "z": "",
+        "name": "Batterie",
+        "tab": "15eb2e91.7ca2a1",
+        "order": 2,
+        "disp": true,
+        "width": "10",
+        "collapse": true
+    },
+    {
+        "id": "81338c0d.c74a9",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Baptiste ",
+        "icon": "build",
+        "order": 4
+    },
+    {
+        "id": "b6adabb1.b169a8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Groupe baptiste",
+        "tab": "81338c0d.c74a9",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "35fe7237.eaacae",
+        "type": "serial-port",
+        "z": "",
+        "serialport": "/dev/ttyUSB0",
+        "serialbaud": "19200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": true,
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "5682d830.f6b2b8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Communication",
+        "tab": "15eb2e91.7ca2a1",
+        "order": 4,
+        "disp": true,
+        "width": "10",
+        "collapse": true
+    },
+    {
+        "id": "ac3a8f11.13285",
+        "type": "ui_gauge",
+        "z": "dea97b.67941688",
+        "name": "Jauge vitesse instantanée",
+        "group": "580da1de.bede3",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Vitesse instantanée",
+        "label": "km/h",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "70",
+        "seg2": "90",
+        "x": 410,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "90b17ed8.41e0a",
+        "type": "comment",
+        "z": "dea97b.67941688",
+        "name": "Vitesse",
+        "info": "",
+        "x": 90,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "bd5cbf61.beac5",
+        "type": "comment",
+        "z": "dea97b.67941688",
+        "name": "Statistiques de la course",
+        "info": "",
+        "x": 150,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "f2c02a74.4cab58",
+        "type": "ui_text",
+        "z": "dea97b.67941688",
+        "group": "580da1de.bede3",
+        "order": 3,
+        "width": "10",
+        "height": "1",
+        "name": "Compteur vitesse moyenne",
+        "label": "Vitesse moyenne",
+        "format": "{{msg.payload}} km/h",
+        "layout": "row-spread",
+        "x": 420,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "c6a7a333.d21c7",
+        "type": "ui_text",
+        "z": "dea97b.67941688",
+        "group": "580da1de.bede3",
+        "order": 4,
+        "width": "10",
+        "height": "1",
+        "name": "Compteur vitesse moyenne / tours",
+        "label": "Vitesse moyenne / tours",
+        "format": "{{msg.payload}} km/h",
+        "layout": "row-spread",
+        "x": 440,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "9e24971f.824498",
+        "type": "ui_text",
+        "z": "dea97b.67941688",
+        "group": "580da1de.bede3",
+        "order": 6,
+        "width": "10",
+        "height": "1",
+        "name": "Compteur accélération instantanée",
+        "label": "Accélération instantanée",
+        "format": "{{msg.payload}} km/s²",
+        "layout": "row-spread",
+        "x": 440,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "790a3e07.88098",
+        "type": "ui_slider",
+        "z": "dea97b.67941688",
+        "name": "",
+        "label": "slider",
+        "group": "580da1de.bede3",
+        "order": 7,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": "250",
+        "step": 1,
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "f2c02a74.4cab58",
+                "c6a7a333.d21c7",
+                "9e24971f.824498",
+                "ac3a8f11.13285"
+            ]
+        ]
+    },
+    {
+        "id": "fddc60e5.c7727",
+        "type": "ui_slider",
+        "z": "dea97b.67941688",
+        "name": "",
+        "label": "slider",
+        "group": "6969920.2c3eb7",
+        "order": 7,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": "50",
+        "step": 1,
+        "x": 110,
+        "y": 680,
+        "wires": [
+            [
+                "7b1b62df.8b6f7c",
+                "74b94b33.818944",
+                "6e32706c.ad0eb",
+                "74b2d005.ff323"
+            ]
+        ]
+    },
+    {
+        "id": "9fedbb5a.706a38",
+        "type": "ui_text",
+        "z": "cd75b7b8.8a7de8",
+        "group": "b6adabb1.b169a8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 630,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "dc55629f.46d9e",
+        "type": "ui_text",
+        "z": "cd75b7b8.8a7de8",
+        "group": "b6adabb1.b169a8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Tension",
+        "format": "{{msg.payload}} Volts",
+        "layout": "row-spread",
+        "x": 640,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "aa10f1d9.485",
+        "type": "serial in",
+        "z": "cd75b7b8.8a7de8",
+        "name": "série1",
+        "serial": "35fe7237.eaacae",
+        "x": 70,
+        "y": 120,
+        "wires": [
+            [
+                "9fedbb5a.706a38",
+                "d0840ac5.d8cd28"
+            ]
+        ]
+    },
+    {
+        "id": "6e32706c.ad0eb",
+        "type": "ui_text",
+        "z": "dea97b.67941688",
+        "group": "6969920.2c3eb7",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "name": "Compteur tours",
+        "label": "Nombre de tours",
+        "format": "{{msg.payload}} tours",
+        "layout": "row-spread",
+        "x": 380,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "7b1b62df.8b6f7c",
+        "type": "ui_text",
+        "z": "dea97b.67941688",
+        "group": "6969920.2c3eb7",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "name": "Chronomètre course",
+        "label": "Chronomètre de la course",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 400,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "74b94b33.818944",
+        "type": "ui_text",
+        "z": "dea97b.67941688",
+        "group": "6969920.2c3eb7",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "name": "Chronomètre tour",
+        "label": "Chronomètre du tour",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 390,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "11b54e4.d1c72b2",
+        "type": "ui_text",
+        "z": "cd75b7b8.8a7de8",
+        "group": "b6adabb1.b169a8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "INTENSIT2",
+        "format": "{{msg.payload}}Ampere",
+        "layout": "row-spread",
+        "x": 650,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "770b2ab0.da2a04",
+        "type": "comment",
+        "z": "dea97b.67941688",
+        "name": "Batterie",
+        "info": "",
+        "x": 90,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "afafa4f2.108288",
+        "type": "ui_slider",
+        "z": "dea97b.67941688",
+        "name": "",
+        "label": "slider",
+        "group": "a0c3baf.c141e48",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": "100",
+        "step": "1",
+        "x": 110,
+        "y": 400,
+        "wires": [
+            [
+                "c25b076b.28b188",
+                "39f379c8.6d2656",
+                "5a465c21.751fb4"
+            ]
+        ]
+    },
+    {
+        "id": "c25b076b.28b188",
+        "type": "ui_gauge",
+        "z": "dea97b.67941688",
+        "name": "Charge batterie",
+        "group": "a0c3baf.c141e48",
+        "order": 0,
+        "width": "5",
+        "height": "4",
+        "gtype": "donut",
+        "title": "Charge de la batterie",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#ca3838",
+            "#e6e600",
+            "#00b500"
+        ],
+        "seg1": "15",
+        "seg2": "35",
+        "x": 380,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "d0840ac5.d8cd28",
+        "type": "function",
+        "z": "cd75b7b8.8a7de8",
+        "name": "split data",
+        "func": "var msg1={};\nvar msg2={};\nvar msg3={};\nvar msg4={};\nvar msg5={};\no=msg.payload.split(\",\");\nmsg1.payload=o[0];\nmsg2.payload=o[1];\nmsg3.payload=o[2];\nmsg4.payload=o[3];\nmsg5.payload=o[4];\nreturn [msg1,msg2,msg3,msg4,msg5];",
+        "outputs": 5,
+        "noerr": 0,
+        "x": 320,
+        "y": 340,
+        "wires": [
+            [
+                "dc55629f.46d9e"
+            ],
+            [
+                "11b54e4.d1c72b2"
+            ],
+            [
+                "771569f8.b8b5d8"
+            ],
+            [
+                "10566fbb.9cac7"
+            ],
+            [
+                "4f93a7be.a1f398"
+            ]
+        ]
+    },
+    {
+        "id": "771569f8.b8b5d8",
+        "type": "ui_text",
+        "z": "cd75b7b8.8a7de8",
+        "group": "b6adabb1.b169a8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "vitesse",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 640,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "10566fbb.9cac7",
+        "type": "ui_text",
+        "z": "cd75b7b8.8a7de8",
+        "group": "b6adabb1.b169a8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "crgdwg",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 640,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "4f93a7be.a1f398",
+        "type": "ui_text",
+        "z": "cd75b7b8.8a7de8",
+        "group": "b6adabb1.b169a8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "distance total",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 650,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "39f379c8.6d2656",
+        "type": "ui_text",
+        "z": "dea97b.67941688",
+        "group": "a0c3baf.c141e48",
+        "order": 0,
+        "width": "5",
+        "height": "2",
+        "name": "",
+        "label": "Tension de la batterie",
+        "format": "{{msg.payload}} Volts",
+        "layout": "col-center",
+        "x": 400,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "5a465c21.751fb4",
+        "type": "ui_text",
+        "z": "dea97b.67941688",
+        "group": "a0c3baf.c141e48",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "name": "Puissance absorbée instantanée",
+        "label": "Puissance absorbée instantanée",
+        "format": "{{msg.payload}} Watts",
+        "layout": "row-spread",
+        "x": 430,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "74b2d005.ff323",
+        "type": "ui_text",
+        "z": "dea97b.67941688",
+        "group": "6969920.2c3eb7",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "name": "Distance tour",
+        "label": "Distance du tour",
+        "format": "{{msg.payload}} km",
+        "layout": "row-spread",
+        "x": 370,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "486d4413.2f41dc",
+        "type": "worldmap",
+        "z": "dea97b.67941688",
+        "name": "Position GPS",
+        "lat": "43.91354",
+        "lon": "2.11266",
+        "zoom": "16",
+        "layer": "OSM",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "false",
+        "path": "/worldmap",
+        "x": 710,
+        "y": 1000,
+        "wires": [],
+        "inputLabels": [
+            "msg.payload"
+        ]
+    },
+    {
+        "id": "5da66be0.06eff4",
+        "type": "comment",
+        "z": "dea97b.67941688",
+        "name": "Communication avec le pilote",
+        "info": "",
+        "x": 160,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "d4bffced.5ff5b",
+        "type": "ui_form",
+        "z": "dea97b.67941688",
+        "name": "Formulaire",
+        "label": "Envoyer un message au pilote",
+        "group": "5682d830.f6b2b8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Ecrire un message",
+                "value": "message",
+                "type": "text",
+                "required": false
+            }
+        ],
+        "formValue": {
+            "message": ""
+        },
+        "payload": "",
+        "submit": "Envoyer",
+        "cancel": "Annuler",
+        "topic": "topic",
+        "x": 120,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f2d09963.e59dd8",
+        "type": "ui_text_input",
+        "z": "cd75b7b8.8a7de8",
+        "name": "",
+        "label": "",
+        "group": "b6adabb1.b169a8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "",
+        "x": 120,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b67c910c.f9917",
+        "type": "debug",
+        "z": "cd75b7b8.8a7de8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 240,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "3d557f82.e93b8",
+        "type": "inject",
+        "z": "dea97b.67941688",
+        "name": "",
+        "topic": "",
+        "payload": "{name:\"Voiture\", lat:43.91595, lon:2.11873}",
+        "payloadType": "str",
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 90,
+        "y": 1000,
+        "wires": [
+            [
+                "486d4413.2f41dc",
+                "6d371e97.34ea6"
+            ]
+        ]
+    },
+    {
+        "id": "6d371e97.34ea6",
+        "type": "ui_text",
+        "z": "dea97b.67941688",
+        "group": "b6adabb1.b169a8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "MAP",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 690,
+        "y": 1060,
+        "wires": []
+    }
+]
