@@ -543,7 +543,7 @@
         ],
         "seg1": "15",
         "seg2": "35",
-        "x": 720,
+        "x": 480,
         "y": 360,
         "wires": []
     },
@@ -637,7 +637,7 @@
         "label": "Tension de la batterie",
         "format": "{{msg.payload}} Volts",
         "layout": "col-center",
-        "x": 480,
+        "x": 240,
         "y": 400,
         "wires": []
     },
@@ -653,7 +653,7 @@
         "label": "Puissance absorbée instantanée",
         "format": "{{msg.payload}} Watts",
         "layout": "row-spread",
-        "x": 770,
+        "x": 530,
         "y": 460,
         "wires": []
     },
@@ -894,7 +894,7 @@
         "links": [
             "f89322.b41b5ce"
         ],
-        "x": 315,
+        "x": 75,
         "y": 360,
         "wires": [
             [
@@ -912,7 +912,7 @@
         "func": "var load = {};\nload.payload = (msg.payload*100)/52;\nload.payload = Math.round(num.payload*10)/10;\nreturn load;",
         "outputs": 1,
         "noerr": 0,
-        "x": 460,
+        "x": 220,
         "y": 360,
         "wires": [
             [
@@ -942,7 +942,7 @@
         "label": "Intensité de la batterie",
         "format": "{{msg.payload}} Ampères",
         "layout": "col-center",
-        "x": 480,
+        "x": 240,
         "y": 460,
         "wires": []
     },
@@ -966,7 +966,7 @@
         "links": [
             "5fb824ca.7f668c"
         ],
-        "x": 315,
+        "x": 75,
         "y": 540,
         "wires": [
             [
@@ -983,36 +983,11 @@
         "func": "var tension = {};\ntension.payload = msg;\nreturn tension;",
         "outputs": 1,
         "noerr": 0,
-        "x": 460,
+        "x": 220,
         "y": 500,
         "wires": [
             [
                 "654d05e.4656bfc"
-            ]
-        ]
-    },
-    {
-        "id": "880c398c.0dd5f8",
-        "type": "ui_button",
-        "z": "cd75b7b8.8a7de8",
-        "name": "",
-        "group": "b6adabb1.b169a8",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "button",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "coucou l'arduino c'es la framboise ",
-        "payloadType": "str",
-        "topic": "",
-        "x": 120,
-        "y": 480,
-        "wires": [
-            [
-                "5114d734.044c18"
             ]
         ]
     },
@@ -1024,11 +999,33 @@
         "func": "var power = {};\npower.payload = tension.payload * msg.payload;\nreturn power;",
         "outputs": 1,
         "noerr": 0,
-        "x": 680,
+        "x": 440,
         "y": 540,
         "wires": [
             [
                 "5a465c21.751fb4"
+            ]
+        ]
+    },
+    {
+        "id": "210689bf.86a976",
+        "type": "ui_text_input",
+        "z": "cd75b7b8.8a7de8",
+        "name": "",
+        "label": "",
+        "group": "b6adabb1.b169a8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "",
+        "x": 120,
+        "y": 480,
+        "wires": [
+            [
+                "5114d734.044c18"
             ]
         ]
     }
