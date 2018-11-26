@@ -7,212 +7,6 @@
         "info": "Page principale du tableau de bord"
     },
     {
-        "id": "cd75b7b8.8a7de8",
-        "type": "tab",
-        "label": "Baptiste(oui c'est moi)",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "6bd2c6d2.207ca8",
-        "type": "subflow",
-        "name": "Subflow 1",
-        "info": "",
-        "in": [],
-        "out": []
-    },
-    {
-        "id": "e9121bd6.41ebd8",
-        "type": "subflow",
-        "name": "Subflow 2",
-        "info": "",
-        "in": [],
-        "out": []
-    },
-    {
-        "id": "9de9ebc0.e891e8",
-        "type": "ui_base",
-        "theme": {
-            "name": "theme-dark",
-            "lightTheme": {
-                "default": "#0094CE",
-                "baseColor": "#0094CE",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "darkTheme": {
-                "default": "#097479",
-                "baseColor": "#c0392b",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "customTheme": {
-                "name": "Untitled Theme 1",
-                "default": "#4B7930",
-                "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "reset": false
-            },
-            "themeState": {
-                "base-color": {
-                    "default": "#097479",
-                    "value": "#c0392b",
-                    "edited": true
-                },
-                "page-titlebar-backgroundColor": {
-                    "value": "#c0392b",
-                    "edited": false
-                },
-                "page-backgroundColor": {
-                    "value": "#111111",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#000000",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#db695d",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#555555",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#333333",
-                    "edited": false
-                },
-                "widget-textColor": {
-                    "value": "#eeeeee",
-                    "edited": false
-                },
-                "widget-backgroundColor": {
-                    "value": "#c0392b",
-                    "edited": false
-                },
-                "widget-borderColor": {
-                    "value": "#333333",
-                    "edited": false
-                },
-                "base-font": {
-                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-                }
-            },
-            "angularTheme": {
-                "primary": "indigo",
-                "accents": "blue",
-                "warn": "red",
-                "background": "grey"
-            }
-        },
-        "site": {
-            "name": "Tableau de bord - Challenge ÉducÉco - Lycée L. Rascol",
-            "hideToolbar": "false",
-            "allowSwipe": "true",
-            "allowTempTheme": "true",
-            "dateFormat": "DD/MM/YYYY",
-            "sizes": {
-                "sx": 48,
-                "sy": 48,
-                "gx": 6,
-                "gy": 6,
-                "cx": 6,
-                "cy": 6,
-                "px": 0,
-                "py": 0
-            }
-        }
-    },
-    {
-        "id": "15eb2e91.7ca2a1",
-        "type": "ui_tab",
-        "z": "",
-        "name": "Tableau de bord",
-        "icon": "dns",
-        "order": 1
-    },
-    {
-        "id": "580da1de.bede3",
-        "type": "ui_group",
-        "z": "",
-        "name": "Vitesse",
-        "tab": "15eb2e91.7ca2a1",
-        "order": 1,
-        "disp": true,
-        "width": "10",
-        "collapse": true
-    },
-    {
-        "id": "6969920.2c3eb7",
-        "type": "ui_group",
-        "z": "",
-        "name": "Statistiques de la course",
-        "tab": "15eb2e91.7ca2a1",
-        "order": 3,
-        "disp": true,
-        "width": "6",
-        "collapse": true
-    },
-    {
-        "id": "a0c3baf.c141e48",
-        "type": "ui_group",
-        "z": "",
-        "name": "Batterie",
-        "tab": "15eb2e91.7ca2a1",
-        "order": 2,
-        "disp": true,
-        "width": "10",
-        "collapse": true
-    },
-    {
-        "id": "81338c0d.c74a9",
-        "type": "ui_tab",
-        "z": "",
-        "name": "Baptiste ",
-        "icon": "build",
-        "order": 4
-    },
-    {
-        "id": "b6adabb1.b169a8",
-        "type": "ui_group",
-        "z": "",
-        "name": "Groupe baptiste",
-        "tab": "81338c0d.c74a9",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "35fe7237.eaacae",
-        "type": "serial-port",
-        "z": "",
-        "serialport": "/dev/ttyUSB0",
-        "serialbaud": "19200",
-        "databits": "8",
-        "parity": "none",
-        "stopbits": "1",
-        "newline": "\\n",
-        "bin": "false",
-        "out": "char",
-        "addchar": true,
-        "responsetimeout": "10000"
-    },
-    {
-        "id": "5682d830.f6b2b8",
-        "type": "ui_group",
-        "z": "",
-        "name": "Communication",
-        "tab": "15eb2e91.7ca2a1",
-        "order": 4,
-        "disp": true,
-        "width": "10",
-        "collapse": true
-    },
-    {
         "id": "ac3a8f11.13285",
         "type": "ui_gauge",
         "z": "dea97b.67941688",
@@ -361,53 +155,6 @@
         ]
     },
     {
-        "id": "9fedbb5a.706a38",
-        "type": "ui_text",
-        "z": "cd75b7b8.8a7de8",
-        "group": "b6adabb1.b169a8",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "text",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 630,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "dc55629f.46d9e",
-        "type": "ui_text",
-        "z": "cd75b7b8.8a7de8",
-        "group": "b6adabb1.b169a8",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Tension",
-        "format": "{{msg.payload}} Volts",
-        "layout": "row-spread",
-        "x": 640,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "aa10f1d9.485",
-        "type": "serial in",
-        "z": "cd75b7b8.8a7de8",
-        "name": "série1",
-        "serial": "35fe7237.eaacae",
-        "x": 70,
-        "y": 120,
-        "wires": [
-            [
-                "9fedbb5a.706a38",
-                "d0840ac5.d8cd28"
-            ]
-        ]
-    },
-    {
         "id": "6e32706c.ad0eb",
         "type": "ui_text",
         "z": "dea97b.67941688",
@@ -453,22 +200,6 @@
         "layout": "row-spread",
         "x": 390,
         "y": 700,
-        "wires": []
-    },
-    {
-        "id": "11b54e4.d1c72b2",
-        "type": "ui_text",
-        "z": "cd75b7b8.8a7de8",
-        "group": "b6adabb1.b169a8",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "INTENSIT2",
-        "format": "{{msg.payload}}Ampere",
-        "layout": "row-spread",
-        "x": 650,
-        "y": 340,
         "wires": []
     },
     {
@@ -534,82 +265,6 @@
         "wires": []
     },
     {
-        "id": "d0840ac5.d8cd28",
-        "type": "function",
-        "z": "cd75b7b8.8a7de8",
-        "name": "split data",
-        "func": "var msg1={};\nvar msg2={};\nvar msg3={};\nvar msg4={};\nvar msg5={};\no=msg.payload.split(\",\");\nmsg1.payload=o[0];\nmsg2.payload=o[1];\nmsg3.payload=o[2];\nmsg4.payload=o[3];\nmsg5.payload=o[4];\nreturn [msg1,msg2,msg3,msg4,msg5];",
-        "outputs": 5,
-        "noerr": 0,
-        "x": 320,
-        "y": 340,
-        "wires": [
-            [
-                "dc55629f.46d9e"
-            ],
-            [
-                "11b54e4.d1c72b2"
-            ],
-            [
-                "771569f8.b8b5d8"
-            ],
-            [
-                "10566fbb.9cac7"
-            ],
-            [
-                "4f93a7be.a1f398"
-            ]
-        ]
-    },
-    {
-        "id": "771569f8.b8b5d8",
-        "type": "ui_text",
-        "z": "cd75b7b8.8a7de8",
-        "group": "b6adabb1.b169a8",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "vitesse",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 640,
-        "y": 380,
-        "wires": []
-    },
-    {
-        "id": "10566fbb.9cac7",
-        "type": "ui_text",
-        "z": "cd75b7b8.8a7de8",
-        "group": "b6adabb1.b169a8",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "crgdwg",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 640,
-        "y": 420,
-        "wires": []
-    },
-    {
-        "id": "4f93a7be.a1f398",
-        "type": "ui_text",
-        "z": "cd75b7b8.8a7de8",
-        "group": "b6adabb1.b169a8",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "distance total",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 650,
-        "y": 460,
-        "wires": []
-    },
-    {
         "id": "39f379c8.6d2656",
         "type": "ui_text",
         "z": "dea97b.67941688",
@@ -658,28 +313,6 @@
         "wires": []
     },
     {
-        "id": "486d4413.2f41dc",
-        "type": "worldmap",
-        "z": "dea97b.67941688",
-        "name": "Position GPS",
-        "lat": "43.91354",
-        "lon": "2.11266",
-        "zoom": "16",
-        "layer": "OSM",
-        "cluster": "",
-        "maxage": "",
-        "usermenu": "show",
-        "layers": "show",
-        "panit": "false",
-        "path": "/worldmap",
-        "x": 710,
-        "y": 1000,
-        "wires": [],
-        "inputLabels": [
-            "msg.payload"
-        ]
-    },
-    {
         "id": "5da66be0.06eff4",
         "type": "comment",
         "z": "dea97b.67941688",
@@ -721,74 +354,212 @@
         ]
     },
     {
-        "id": "f2d09963.e59dd8",
-        "type": "ui_text_input",
-        "z": "cd75b7b8.8a7de8",
+        "id": "b35362e8.c01fe",
+        "type": "comment",
+        "z": "dea97b.67941688",
+        "name": "Incruster la map dans le dashboard",
+        "info": "This example shows how to embed the Worldmap \ninto a template node within the `node-red-dashboard`\n\nThe first flow creates a dashboard button that \ngenerates a randon position, with the required \nicon, and passes that to the worldmap. The\nmap is configured to automatically pan to the\nposition of any point that arrives.\n\nThe second flow initialise the dashboard template\nwith the initial map and sets it to a more square shape\nby adjusting the height.",
+        "x": 180,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "d64d5409.11aa18",
+        "type": "worldmap",
+        "z": "dea97b.67941688",
         "name": "",
-        "label": "",
-        "group": "b6adabb1.b169a8",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "mode": "text",
-        "delay": 300,
+        "lat": "43.91535",
+        "lon": "2.11352",
+        "zoom": "16",
+        "layer": "OSM",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "hide",
+        "panit": "true",
+        "path": "",
+        "x": 570,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "1f814755.43ae89",
+        "type": "inject",
+        "z": "dea97b.67941688",
+        "name": "",
         "topic": "",
-        "x": 120,
-        "y": 340,
+        "payload": "",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "x": 110,
+        "y": 960,
+        "wires": [
+            [
+                "6055de73.037d4"
+            ]
+        ]
+    },
+    {
+        "id": "6055de73.037d4",
+        "type": "function",
+        "z": "dea97b.67941688",
+        "name": "",
+        "func": "// create random position\nvar lat = 43.91535 + Math.random() * 0.0002;\nvar lon = 2.11352 + Math.random() * 0.0002;\nmsg.payload={lat:lat, lon:lon, name:\"Voiture\", icon:\"fa-car\"};\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 370,
+        "y": 1020,
+        "wires": [
+            [
+                "d64d5409.11aa18"
+            ]
+        ]
+    },
+    {
+        "id": "1d8ee5c9.63fe7a",
+        "type": "inject",
+        "z": "dea97b.67941688",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "x": 110,
+        "y": 1080,
+        "wires": [
+            [
+                "99be12e1.3077f"
+            ]
+        ]
+    },
+    {
+        "id": "48d262f1.ac838c",
+        "type": "ui_template",
+        "z": "dea97b.67941688",
+        "group": "c9c4314f.14801",
+        "name": "",
+        "order": 0,
+        "width": "26",
+        "height": "10",
+        "format": "<div ng-bind-html=\"msg.payload | trusted\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 560,
+        "y": 1080,
         "wires": [
             []
         ]
     },
     {
-        "id": "b67c910c.f9917",
-        "type": "debug",
-        "z": "cd75b7b8.8a7de8",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "x": 240,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "3d557f82.e93b8",
-        "type": "inject",
+        "id": "99be12e1.3077f",
+        "type": "template",
         "z": "dea97b.67941688",
         "name": "",
-        "topic": "",
-        "payload": "{name:\"Voiture\", lat:43.91595, lon:2.11873}",
-        "payloadType": "str",
-        "repeat": "2",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "x": 90,
-        "y": 1000,
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<center>\n    <iframe \n        src=\"../worldmap\"\n        style=\"height:500px;width:1300px;\"\n    >\n    </iframe>\n</center>",
+        "x": 380,
+        "y": 1080,
         "wires": [
             [
-                "486d4413.2f41dc",
-                "6d371e97.34ea6"
+                "48d262f1.ac838c"
             ]
         ]
     },
     {
-        "id": "6d371e97.34ea6",
-        "type": "ui_text",
+        "id": "b9b09c84.9f422",
+        "type": "ui_button",
         "z": "dea97b.67941688",
-        "group": "b6adabb1.b169a8",
+        "name": "",
+        "group": "c9c4314f.14801",
         "order": 0,
         "width": 0,
         "height": 0,
-        "name": "",
-        "label": "MAP",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 690,
-        "y": 1060,
-        "wires": []
+        "passthru": false,
+        "label": "Move Mike",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-male",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 110,
+        "y": 1020,
+        "wires": [
+            [
+                "6055de73.037d4"
+            ]
+        ]
+    },
+    {
+        "id": "580da1de.bede3",
+        "type": "ui_group",
+        "z": "",
+        "name": "Vitesse",
+        "tab": "15eb2e91.7ca2a1",
+        "order": 1,
+        "disp": true,
+        "width": "10",
+        "collapse": true
+    },
+    {
+        "id": "6969920.2c3eb7",
+        "type": "ui_group",
+        "z": "",
+        "name": "Statistiques de la course",
+        "tab": "15eb2e91.7ca2a1",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "a0c3baf.c141e48",
+        "type": "ui_group",
+        "z": "",
+        "name": "Batterie",
+        "tab": "15eb2e91.7ca2a1",
+        "order": 2,
+        "disp": true,
+        "width": "10",
+        "collapse": true
+    },
+    {
+        "id": "5682d830.f6b2b8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Communication",
+        "tab": "15eb2e91.7ca2a1",
+        "order": 4,
+        "disp": true,
+        "width": "10",
+        "collapse": true
+    },
+    {
+        "id": "c9c4314f.14801",
+        "type": "ui_group",
+        "z": "",
+        "name": "Carte",
+        "tab": "15eb2e91.7ca2a1",
+        "order": 5,
+        "disp": true,
+        "width": "26",
+        "collapse": true
+    },
+    {
+        "id": "15eb2e91.7ca2a1",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Tableau de bord",
+        "icon": "dns",
+        "order": 1
     }
 ]
