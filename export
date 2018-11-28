@@ -981,7 +981,7 @@
         "type": "function",
         "z": "dea97b.67941688",
         "name": "Puissance fournie",
-        "func": "var power = {};\npower.payload = Math.round(msg.payload*100)/100;\nif(power.payload < 1000){\n    power.payload = power.payload.toString() + \" Watts\";\n}else if(power.payload > 1000){\n    power.payload = power.payload/1000;\n    power.payload = Math.round(power.payload*10)/10\n    power.payload = power.payload.toString() + \" Kilowatts\"\n}\nreturn power;",
+        "func": "var power = {};\npower.payload = Math.round(msg.payload*100)/100;\nif(power.payload < 1000)\n{\n    power.payload = power.payload.toString() + \" Watts\";\n}\nelse if(power.payload > 1000)\n{\n    power.payload = power.payload/1000;\n    power.payload = Math.round(power.payload*10)/10\n    power.payload = power.payload.toString() + \" Kilowatts\"\n}\nreturn power;",
         "outputs": 1,
         "noerr": 0,
         "x": 230,
