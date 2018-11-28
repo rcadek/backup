@@ -552,8 +552,8 @@
         "type": "function",
         "z": "cd75b7b8.8a7de8",
         "name": "split data",
-        "func": "var msg1={};\nvar msg2={};\nvar msg3={};\nvar msg4={};\nvar msg5={};\no=msg.payload.split(\",\");\nmsg1.payload=o[0];\nmsg2.payload=o[1];\nmsg3.payload=o[2];\nmsg4.payload=o[3];\nmsg5.payload=o[4];\nreturn [msg1,msg2,msg3,msg4,msg5];",
-        "outputs": 5,
+        "func": "var msg1={};\nvar msg2={};\nvar msg3={};\nvar msg4={};\nvar msg5={};\nvar p_absorbe = {};\no=msg.payload.split(\",\");\nmsg1.payload=o[0];\nmsg2.payload=o[1];\np_absorbe.payload = o[0]*o[1]\nmsg3.payload=o[2];\nmsg4.payload=o[3];\nmsg5.payload=o[4];\nreturn [msg1,msg2,p_absorbe,msg3,msg4,msg5];",
+        "outputs": 6,
         "noerr": 0,
         "x": 320,
         "y": 340,
@@ -565,6 +565,9 @@
             [
                 "11b54e4.d1c72b2",
                 "5fb824ca.7f668c"
+            ],
+            [
+                "4534bc2c.2cb614"
             ],
             [
                 "771569f8.b8b5d8"
@@ -590,7 +593,7 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "x": 640,
-        "y": 380,
+        "y": 420,
         "wires": []
     },
     {
@@ -606,7 +609,7 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "x": 640,
-        "y": 420,
+        "y": 460,
         "wires": []
     },
     {
@@ -622,7 +625,7 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "x": 650,
-        "y": 460,
+        "y": 500,
         "wires": []
     },
     {
@@ -899,8 +902,7 @@
         "wires": [
             [
                 "39f379c8.6d2656",
-                "b466caba.2c2ec8",
-                "ad8915bb.883098"
+                "b466caba.2c2ec8"
             ]
         ]
     },
@@ -967,11 +969,10 @@
             "5fb824ca.7f668c"
         ],
         "x": 75,
-        "y": 540,
+        "y": 460,
         "wires": [
             [
-                "d16a8536.450408",
-                "654d05e.4656bfc"
+                "d16a8536.450408"
             ]
         ]
     },
@@ -980,11 +981,11 @@
         "type": "function",
         "z": "dea97b.67941688",
         "name": "Puissance absorbée",
-        "func": "var power = {};\npower.payload = msg.payload * tension;\nreturn power;",
+        "func": "var power = {};\npower.payload = msg.payload;\nreturn power;\n\n\n//load.payload = (msg.payload*100)/52;\n//load.payload = Math.round(load.payload*10)/10;",
         "outputs": 1,
         "noerr": 0,
-        "x": 440,
-        "y": 540,
+        "x": 240,
+        "y": 500,
         "wires": [
             [
                 "5a465c21.751fb4"
@@ -1014,14 +1015,26 @@
         ]
     },
     {
-        "id": "ad8915bb.883098",
-        "type": "function",
+        "id": "4534bc2c.2cb614",
+        "type": "link out",
+        "z": "cd75b7b8.8a7de8",
+        "name": "Puissance absorbée",
+        "links": [
+            "376b617e.4cb19e"
+        ],
+        "x": 595,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "376b617e.4cb19e",
+        "type": "link in",
         "z": "dea97b.67941688",
-        "name": "Tension batterie",
-        "func": "var tension = {};\ntension.payload = msg.payload;\nreturn tension;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 220,
+        "name": "",
+        "links": [
+            "4534bc2c.2cb614"
+        ],
+        "x": 75,
         "y": 500,
         "wires": [
             [
