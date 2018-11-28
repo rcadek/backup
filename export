@@ -552,7 +552,7 @@
         "type": "function",
         "z": "cd75b7b8.8a7de8",
         "name": "split data",
-        "func": "var msg1={};\nvar msg2={};\nvar msg3={};\nvar msg4={};\nvar msg5={};\nvar p_fournie = {};\no=msg.payload.split(\",\");\nmsg1.payload=o[0];\nmsg2.payload=o[1];\np_fournie.payload = o[0]*o[1]\nmsg3.payload=o[2];\nmsg4.payload=o[3];\nmsg5.payload=o[4];\nreturn [msg1,msg2,p_absorbe,msg3,msg4,msg5];",
+        "func": "var msg1={};\nvar msg2={};\nvar msg3={};\nvar msg4={};\nvar msg5={};\nvar p_fournie = {};\no=msg.payload.split(\",\");\nmsg1.payload=o[0];\nmsg2.payload=o[1];\np_fournie.payload = o[0]*o[1]\nmsg3.payload=o[2];\nmsg4.payload=o[3];\nmsg5.payload=o[4];\nreturn [msg1,msg2,p_fournie,msg3,msg4,msg5];",
         "outputs": 6,
         "noerr": 0,
         "x": 320,
