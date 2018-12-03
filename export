@@ -443,7 +443,8 @@
         "wires": [
             [
                 "9fedbb5a.706a38",
-                "d0840ac5.d8cd28"
+                "d0840ac5.d8cd28",
+                "a1119c9f.77374"
             ]
         ]
     },
@@ -928,8 +929,8 @@
         "z": "cd75b7b8.8a7de8",
         "name": "expeditattor",
         "serial": "35fe7237.eaacae",
-        "x": 320,
-        "y": 520,
+        "x": 570,
+        "y": 620,
         "wires": []
     },
     {
@@ -993,28 +994,6 @@
         ]
     },
     {
-        "id": "210689bf.86a976",
-        "type": "ui_text_input",
-        "z": "cd75b7b8.8a7de8",
-        "name": "",
-        "label": "",
-        "group": "b6adabb1.b169a8",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "mode": "text",
-        "delay": 300,
-        "topic": "",
-        "x": 120,
-        "y": 480,
-        "wires": [
-            [
-                "5114d734.044c18"
-            ]
-        ]
-    },
-    {
         "id": "4534bc2c.2cb614",
         "type": "link out",
         "z": "cd75b7b8.8a7de8",
@@ -1039,6 +1018,22 @@
         "wires": [
             [
                 "654d05e.4656bfc"
+            ]
+        ]
+    },
+    {
+        "id": "a1119c9f.77374",
+        "type": "function",
+        "z": "cd75b7b8.8a7de8",
+        "name": "split data",
+        "func": "var msg={};\n\n\nmsg=msg.payload+\"#\";\n\nreturn [msg];",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 320,
+        "y": 560,
+        "wires": [
+            [
+                "5114d734.044c18"
             ]
         ]
     }
