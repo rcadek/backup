@@ -429,7 +429,7 @@
         "format": "{{msg.payload}} Volts",
         "layout": "row-spread",
         "x": 640,
-        "y": 260,
+        "y": 220,
         "wires": []
     },
     {
@@ -444,7 +444,7 @@
             [
                 "9fedbb5a.706a38",
                 "d0840ac5.d8cd28",
-                "a1119c9f.77374"
+                "5114d734.044c18"
             ]
         ]
     },
@@ -509,7 +509,7 @@
         "format": "{{msg.payload}} Ampere",
         "layout": "row-spread",
         "x": 640,
-        "y": 340,
+        "y": 300,
         "wires": []
     },
     {
@@ -553,10 +553,10 @@
         "type": "function",
         "z": "cd75b7b8.8a7de8",
         "name": "split data",
-        "func": "var msg1={};\nvar msg2={};\nvar msg3={};\nvar msg4={};\nvar msg5={};\nvar p_fournie = {};\no=msg.payload.split(\",\");\nmsg1.payload=o[0];\nmsg2.payload=o[1];\np_fournie.payload = o[0]*o[1]\nmsg3.payload=o[2];\nmsg4.payload=o[3];\nmsg5.payload=o[4];\nreturn [msg1,msg2,p_fournie,msg3,msg4,msg5];",
+        "func": "var msg1={};\nvar msg2={};\nvar msg3={};\nvar msg4={};\nvar msg5={};\nvar p_fournie = {};\no=msg.payload.split(\";\");\nmsg1.payload=o[0];\nmsg2.payload=o[1];\np_fournie.payload = o[0]*o[1];\nmsg3.payload=o[2];\nmsg4.payload=o[3];\nmsg5.payload=o[4];\nreturn [msg1,msg2,p_fournie,msg3,msg4,msg5];",
         "outputs": 6,
         "noerr": 0,
-        "x": 320,
+        "x": 420,
         "y": 340,
         "wires": [
             [
@@ -571,7 +571,8 @@
                 "4534bc2c.2cb614"
             ],
             [
-                "771569f8.b8b5d8"
+                "771569f8.b8b5d8",
+                "a199a0d8.27074"
             ],
             [
                 "10566fbb.9cac7"
@@ -590,10 +591,10 @@
         "width": 0,
         "height": 0,
         "name": "",
-        "label": "vitesse",
+        "label": "Coordonnés",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 640,
+        "x": 650,
         "y": 420,
         "wires": []
     },
@@ -606,11 +607,11 @@
         "width": 0,
         "height": 0,
         "name": "",
-        "label": "crgdwg",
+        "label": "gsfdg",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 640,
-        "y": 460,
+        "x": 630,
+        "y": 500,
         "wires": []
     },
     {
@@ -626,7 +627,7 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "x": 650,
-        "y": 500,
+        "y": 540,
         "wires": []
     },
     {
@@ -728,8 +729,8 @@
         "console": false,
         "tostatus": false,
         "complete": "payload",
-        "x": 240,
-        "y": 200,
+        "x": 410,
+        "y": 40,
         "wires": []
     },
     {
@@ -786,7 +787,7 @@
         "type": "function",
         "z": "dea97b.67941688",
         "name": "",
-        "func": "// create random position\nvar latitude = 43.91535 + Math.random() * 0.0002;\nvar longitude = 2.11352 + Math.random() * 0.0002;\nmsg.payload = {\n    lat:latitude,\n    lon:longitude,\n    name:\"Voiture\",\n    icon:\"fa-car\",\n    iconColor: \"#FF0000\"\n};\nreturn msg;\n",
+        "func": "// Split data\ngps=msg.payload.split(\":\");\n\nmsg.payload = {\n    lat:gps[0],\n    lon:gps[1],\n    name:\"Voiture\",\n    icon:\"fa-car\",\n    iconColor: \"#FF0000\"\n};\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "x": 370,
@@ -855,31 +856,6 @@
         ]
     },
     {
-        "id": "b9b09c84.9f422",
-        "type": "ui_button",
-        "z": "dea97b.67941688",
-        "name": "",
-        "group": "c9c4314f.14801",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Move Mike",
-        "color": "",
-        "bgcolor": "",
-        "icon": "fa-male",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "",
-        "x": 110,
-        "y": 1120,
-        "wires": [
-            [
-                "6055de73.037d4"
-            ]
-        ]
-    },
-    {
         "id": "f89322.b41b5ce",
         "type": "link out",
         "z": "cd75b7b8.8a7de8",
@@ -888,7 +864,7 @@
             "4dd626f.1b21ed8"
         ],
         "x": 595,
-        "y": 220,
+        "y": 260,
         "wires": []
     },
     {
@@ -930,8 +906,8 @@
         "z": "cd75b7b8.8a7de8",
         "name": "expeditattor",
         "serial": "35fe7237.eaacae",
-        "x": 570,
-        "y": 620,
+        "x": 350,
+        "y": 580,
         "wires": []
     },
     {
@@ -959,7 +935,7 @@
             "8805b2f9.d2e0d"
         ],
         "x": 595,
-        "y": 300,
+        "y": 340,
         "wires": []
     },
     {
@@ -1023,18 +999,30 @@
         ]
     },
     {
-        "id": "a1119c9f.77374",
-        "type": "function",
+        "id": "a199a0d8.27074",
+        "type": "link out",
         "z": "cd75b7b8.8a7de8",
-        "name": "split data",
-        "func": "var msg={};\n\n\nmsg=msg.payload+\"#\";\n\nreturn [msg];",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 320,
-        "y": 560,
+        "name": "Coordonnées GPS",
+        "links": [
+            "18adcac3.cdfff5"
+        ],
+        "x": 595,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "18adcac3.cdfff5",
+        "type": "link in",
+        "z": "dea97b.67941688",
+        "name": "",
+        "links": [
+            "a199a0d8.27074"
+        ],
+        "x": 55,
+        "y": 1120,
         "wires": [
             [
-                "5114d734.044c18"
+                "6055de73.037d4"
             ]
         ]
     }
