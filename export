@@ -713,10 +713,12 @@
         "submit": "Envoyer",
         "cancel": "Annuler",
         "topic": "topic",
-        "x": 120,
-        "y": 960,
+        "x": 140,
+        "y": 980,
         "wires": [
-            []
+            [
+                "8fca5c31.ab0bc"
+            ]
         ]
     },
     {
@@ -906,8 +908,8 @@
         "z": "cd75b7b8.8a7de8",
         "name": "expeditattor",
         "serial": "35fe7237.eaacae",
-        "x": 350,
-        "y": 580,
+        "x": 330,
+        "y": 560,
         "wires": []
     },
     {
@@ -1025,5 +1027,15 @@
                 "6055de73.037d4"
             ]
         ]
+    },
+    {
+        "id": "8fca5c31.ab0bc",
+        "type": "serial out",
+        "z": "dea97b.67941688",
+        "name": "expeditattor",
+        "serial": "35fe7237.eaacae",
+        "x": 710,
+        "y": 980,
+        "wires": []
     }
 ]
