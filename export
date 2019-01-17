@@ -1,1041 +1,1188 @@
-[
-    {
-        "id": "dea97b.67941688",
-        "type": "tab",
-        "label": "Tableau de bord ",
-        "disabled": false,
-        "info": "Page principale du tableau de bord"
+[  
+    {  
+       "id":"dea97b.67941688",
+       "type":"tab",
+       "label":"Tableau de bord ",
+       "disabled":false,
+       "info":"Page principale du tableau de bord"
     },
-    {
-        "id": "cd75b7b8.8a7de8",
-        "type": "tab",
-        "label": "Baptiste(oui c'est moi)",
-        "disabled": false,
-        "info": ""
+    {  
+       "id":"cd75b7b8.8a7de8",
+       "type":"tab",
+       "label":"Baptiste(oui c'est moi)",
+       "disabled":false,
+       "info":""
     },
-    {
-        "id": "6bd2c6d2.207ca8",
-        "type": "subflow",
-        "name": "Subflow 1",
-        "info": "",
-        "in": [],
-        "out": []
+    {  
+       "id":"6bd2c6d2.207ca8",
+       "type":"subflow",
+       "name":"Subflow 1",
+       "info":"",
+       "in":[  
+ 
+       ],
+       "out":[  
+ 
+       ]
     },
-    {
-        "id": "e9121bd6.41ebd8",
-        "type": "subflow",
-        "name": "Subflow 2",
-        "info": "",
-        "in": [],
-        "out": []
+    {  
+       "id":"e9121bd6.41ebd8",
+       "type":"subflow",
+       "name":"Subflow 2",
+       "info":"",
+       "in":[  
+ 
+       ],
+       "out":[  
+ 
+       ]
     },
-    {
-        "id": "9de9ebc0.e891e8",
-        "type": "ui_base",
-        "theme": {
-            "name": "theme-dark",
-            "lightTheme": {
-                "default": "#0094CE",
-                "baseColor": "#0094CE",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "darkTheme": {
-                "default": "#097479",
-                "baseColor": "#c0392b",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "customTheme": {
-                "name": "Untitled Theme 1",
-                "default": "#4B7930",
-                "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "reset": false
-            },
-            "themeState": {
-                "base-color": {
-                    "default": "#097479",
-                    "value": "#c0392b",
-                    "edited": true
-                },
-                "page-titlebar-backgroundColor": {
-                    "value": "#c0392b",
-                    "edited": false
-                },
-                "page-backgroundColor": {
-                    "value": "#111111",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#000000",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#db695d",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#555555",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#333333",
-                    "edited": false
-                },
-                "widget-textColor": {
-                    "value": "#eeeeee",
-                    "edited": false
-                },
-                "widget-backgroundColor": {
-                    "value": "#c0392b",
-                    "edited": false
-                },
-                "widget-borderColor": {
-                    "value": "#333333",
-                    "edited": false
-                },
-                "base-font": {
-                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-                }
-            },
-            "angularTheme": {
-                "primary": "indigo",
-                "accents": "blue",
-                "warn": "red",
-                "background": "grey"
-            }
-        },
-        "site": {
-            "name": "Tableau de bord - Challenge ÉducÉco - Lycée L. Rascol",
-            "hideToolbar": "false",
-            "allowSwipe": "true",
-            "allowTempTheme": "true",
-            "dateFormat": "DD/MM/YYYY",
-            "sizes": {
-                "sx": 48,
-                "sy": 48,
-                "gx": 6,
-                "gy": 6,
-                "cx": 6,
-                "cy": 6,
-                "px": 0,
-                "py": 0
-            }
-        }
+    {  
+       "id":"9de9ebc0.e891e8",
+       "type":"ui_base",
+       "theme":{  
+          "name":"theme-dark",
+          "lightTheme":{  
+             "default":"#0094CE",
+             "baseColor":"#0094CE",
+             "baseFont":"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+             "edited":true,
+             "reset":false
+          },
+          "darkTheme":{  
+             "default":"#097479",
+             "baseColor":"#c0392b",
+             "baseFont":"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+             "edited":true,
+             "reset":false
+          },
+          "customTheme":{  
+             "name":"Untitled Theme 1",
+             "default":"#4B7930",
+             "baseColor":"#4B7930",
+             "baseFont":"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+             "reset":false
+          },
+          "themeState":{  
+             "base-color":{  
+                "default":"#097479",
+                "value":"#c0392b",
+                "edited":true
+             },
+             "page-titlebar-backgroundColor":{  
+                "value":"#c0392b",
+                "edited":false
+             },
+             "page-backgroundColor":{  
+                "value":"#111111",
+                "edited":false
+             },
+             "page-sidebar-backgroundColor":{  
+                "value":"#000000",
+                "edited":false
+             },
+             "group-textColor":{  
+                "value":"#db695d",
+                "edited":false
+             },
+             "group-borderColor":{  
+                "value":"#555555",
+                "edited":false
+             },
+             "group-backgroundColor":{  
+                "value":"#333333",
+                "edited":false
+             },
+             "widget-textColor":{  
+                "value":"#eeeeee",
+                "edited":false
+             },
+             "widget-backgroundColor":{  
+                "value":"#c0392b",
+                "edited":false
+             },
+             "widget-borderColor":{  
+                "value":"#333333",
+                "edited":false
+             },
+             "base-font":{  
+                "value":"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+             }
+          },
+          "angularTheme":{  
+             "primary":"indigo",
+             "accents":"blue",
+             "warn":"red",
+             "background":"grey"
+          }
+       },
+       "site":{  
+          "name":"Tableau de bord - Challenge ÉducÉco - Lycée L. Rascol",
+          "hideToolbar":"false",
+          "allowSwipe":"true",
+          "allowTempTheme":"true",
+          "dateFormat":"DD/MM/YYYY",
+          "sizes":{  
+             "sx":48,
+             "sy":48,
+             "gx":6,
+             "gy":6,
+             "cx":6,
+             "cy":6,
+             "px":0,
+             "py":0
+          }
+       }
     },
-    {
-        "id": "15eb2e91.7ca2a1",
-        "type": "ui_tab",
-        "z": "",
-        "name": "Tableau de bord",
-        "icon": "dns",
-        "order": 1
+    {  
+       "id":"15eb2e91.7ca2a1",
+       "type":"ui_tab",
+       "z":"",
+       "name":"Tableau de bord",
+       "icon":"dns",
+       "order":1
     },
-    {
-        "id": "580da1de.bede3",
-        "type": "ui_group",
-        "z": "",
-        "name": "Vitesse",
-        "tab": "15eb2e91.7ca2a1",
-        "order": 1,
-        "disp": true,
-        "width": "10",
-        "collapse": true
+    {  
+       "id":"580da1de.bede3",
+       "type":"ui_group",
+       "z":"",
+       "name":"Vitesse",
+       "tab":"15eb2e91.7ca2a1",
+       "order":1,
+       "disp":true,
+       "width":"10",
+       "collapse":true
     },
-    {
-        "id": "6969920.2c3eb7",
-        "type": "ui_group",
-        "z": "",
-        "name": "Statistiques de la course",
-        "tab": "15eb2e91.7ca2a1",
-        "order": 3,
-        "disp": true,
-        "width": "6",
-        "collapse": true
+    {  
+       "id":"6969920.2c3eb7",
+       "type":"ui_group",
+       "z":"",
+       "name":"Statistiques de la course",
+       "tab":"15eb2e91.7ca2a1",
+       "order":3,
+       "disp":true,
+       "width":"6",
+       "collapse":true
     },
-    {
-        "id": "a0c3baf.c141e48",
-        "type": "ui_group",
-        "z": "",
-        "name": "Batterie",
-        "tab": "15eb2e91.7ca2a1",
-        "order": 2,
-        "disp": true,
-        "width": "10",
-        "collapse": true
+    {  
+       "id":"a0c3baf.c141e48",
+       "type":"ui_group",
+       "z":"",
+       "name":"Batterie",
+       "tab":"15eb2e91.7ca2a1",
+       "order":2,
+       "disp":true,
+       "width":"10",
+       "collapse":true
     },
-    {
-        "id": "81338c0d.c74a9",
-        "type": "ui_tab",
-        "z": "",
-        "name": "Baptiste ",
-        "icon": "build",
-        "order": 4
+    {  
+       "id":"81338c0d.c74a9",
+       "type":"ui_tab",
+       "z":"",
+       "name":"Baptiste ",
+       "icon":"build",
+       "order":4
     },
-    {
-        "id": "b6adabb1.b169a8",
-        "type": "ui_group",
-        "z": "",
-        "name": "Groupe baptiste",
-        "tab": "81338c0d.c74a9",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false
+    {  
+       "id":"b6adabb1.b169a8",
+       "type":"ui_group",
+       "z":"",
+       "name":"Groupe baptiste",
+       "tab":"81338c0d.c74a9",
+       "order":1,
+       "disp":true,
+       "width":"6",
+       "collapse":false
     },
-    {
-        "id": "35fe7237.eaacae",
-        "type": "serial-port",
-        "z": "",
-        "serialport": "/dev/ttyUSB0",
-        "serialbaud": "19200",
-        "databits": "8",
-        "parity": "none",
-        "stopbits": "1",
-        "newline": "\\n",
-        "bin": "false",
-        "out": "char",
-        "addchar": true,
-        "responsetimeout": "10000"
+    {  
+       "id":"35fe7237.eaacae",
+       "type":"serial-port",
+       "z":"",
+       "serialport":"/dev/ttyUSB0",
+       "serialbaud":"19200",
+       "databits":"8",
+       "parity":"none",
+       "stopbits":"1",
+       "newline":"\\n",
+       "bin":"false",
+       "out":"char",
+       "addchar":true,
+       "responsetimeout":"10000"
     },
-    {
-        "id": "5682d830.f6b2b8",
-        "type": "ui_group",
-        "z": "",
-        "name": "Communication",
-        "tab": "15eb2e91.7ca2a1",
-        "order": 4,
-        "disp": true,
-        "width": "10",
-        "collapse": true
+    {  
+       "id":"5682d830.f6b2b8",
+       "type":"ui_group",
+       "z":"",
+       "name":"Communication",
+       "tab":"15eb2e91.7ca2a1",
+       "order":4,
+       "disp":true,
+       "width":"10",
+       "collapse":true
     },
-    {
-        "id": "8c65c49c.1c9768",
-        "type": "ui_group",
-        "z": "dea97b.67941688",
-        "name": "Default",
-        "tab": "",
-        "disp": true,
-        "width": "6"
+    {  
+       "id":"8c65c49c.1c9768",
+       "type":"ui_group",
+       "z":"dea97b.67941688",
+       "name":"Default",
+       "tab":"",
+       "disp":true,
+       "width":"6"
     },
-    {
-        "id": "c9c4314f.14801",
-        "type": "ui_group",
-        "z": "",
-        "name": "Carte",
-        "tab": "15eb2e91.7ca2a1",
-        "order": 5,
-        "disp": true,
-        "width": "26",
-        "collapse": true
+    {  
+       "id":"c9c4314f.14801",
+       "type":"ui_group",
+       "z":"",
+       "name":"Carte",
+       "tab":"15eb2e91.7ca2a1",
+       "order":6,
+       "disp":true,
+       "width":"26",
+       "collapse":true
     },
-    {
-        "id": "df54b72d.62a598",
-        "type": "ui_group",
-        "z": "dea97b.67941688",
-        "name": "Default",
-        "tab": "",
-        "disp": true,
-        "width": "6",
-        "collapse": false
+    {  
+       "id":"df54b72d.62a598",
+       "type":"ui_group",
+       "z":"dea97b.67941688",
+       "name":"Default",
+       "tab":"",
+       "disp":true,
+       "width":"6",
+       "collapse":false
     },
-    {
-        "id": "74ec63eb.e91c8c",
-        "type": "ui_group",
-        "z": "dea97b.67941688",
-        "name": "Default",
-        "tab": "",
-        "disp": true,
-        "width": "54",
-        "collapse": false
+    {  
+       "id":"74ec63eb.e91c8c",
+       "type":"ui_group",
+       "z":"dea97b.67941688",
+       "name":"Default",
+       "tab":"",
+       "disp":true,
+       "width":"54",
+       "collapse":false
     },
-    {
-        "id": "ac3a8f11.13285",
-        "type": "ui_gauge",
-        "z": "dea97b.67941688",
-        "name": "Jauge vitesse instantanée",
-        "group": "580da1de.bede3",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "gtype": "gage",
-        "title": "Vitesse instantanée",
-        "label": "km/h",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "100",
-        "colors": [
-            "#00b500",
-            "#e6e600",
-            "#ca3838"
-        ],
-        "seg1": "70",
-        "seg2": "90",
-        "x": 410,
-        "y": 80,
-        "wires": []
+    {  
+       "id":"9bb2332d.68b96",
+       "type":"ui_group",
+       "z":"",
+       "name":"Statistique de la communication",
+       "tab":"15eb2e91.7ca2a1",
+       "order":5,
+       "disp":true,
+       "width":"4",
+       "collapse":true
     },
-    {
-        "id": "90b17ed8.41e0a",
-        "type": "comment",
-        "z": "dea97b.67941688",
-        "name": "Vitesse",
-        "info": "",
-        "x": 90,
-        "y": 40,
-        "wires": []
+    {  
+       "id":"ac3a8f11.13285",
+       "type":"ui_gauge",
+       "z":"dea97b.67941688",
+       "name":"Jauge vitesse instantanée",
+       "group":"580da1de.bede3",
+       "order":2,
+       "width":0,
+       "height":0,
+       "gtype":"gage",
+       "title":"Vitesse instantanée",
+       "label":"km/h",
+       "format":"{{value}}",
+       "min":0,
+       "max":"100",
+       "colors":[  
+          "#00b500",
+          "#e6e600",
+          "#ca3838"
+       ],
+       "seg1":"70",
+       "seg2":"90",
+       "x":710,
+       "y":80,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "bd5cbf61.beac5",
-        "type": "comment",
-        "z": "dea97b.67941688",
-        "name": "Statistiques de la course",
-        "info": "",
-        "x": 150,
-        "y": 640,
-        "wires": []
+    {  
+       "id":"90b17ed8.41e0a",
+       "type":"comment",
+       "z":"dea97b.67941688",
+       "name":"Vitesse",
+       "info":"",
+       "x":90,
+       "y":40,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "f2c02a74.4cab58",
-        "type": "ui_text",
-        "z": "dea97b.67941688",
-        "group": "580da1de.bede3",
-        "order": 3,
-        "width": "10",
-        "height": "1",
-        "name": "Compteur vitesse moyenne",
-        "label": "Vitesse moyenne",
-        "format": "{{msg.payload}} km/h",
-        "layout": "row-spread",
-        "x": 420,
-        "y": 140,
-        "wires": []
+    {  
+       "id":"bd5cbf61.beac5",
+       "type":"comment",
+       "z":"dea97b.67941688",
+       "name":"Statistiques de la course",
+       "info":"",
+       "x":140,
+       "y":980,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "c6a7a333.d21c7",
-        "type": "ui_text",
-        "z": "dea97b.67941688",
-        "group": "580da1de.bede3",
-        "order": 4,
-        "width": "10",
-        "height": "1",
-        "name": "Compteur vitesse moyenne / tours",
-        "label": "Vitesse moyenne / tours",
-        "format": "{{msg.payload}} km/h",
-        "layout": "row-spread",
-        "x": 440,
-        "y": 200,
-        "wires": []
+    {  
+       "id":"f2c02a74.4cab58",
+       "type":"ui_text",
+       "z":"dea97b.67941688",
+       "group":"580da1de.bede3",
+       "order":3,
+       "width":"10",
+       "height":"1",
+       "name":"Compteur vitesse moyenne",
+       "label":"Vitesse moyenne",
+       "format":"{{msg.payload}} km/h",
+       "layout":"row-spread",
+       "x":720,
+       "y":140,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "9e24971f.824498",
-        "type": "ui_text",
-        "z": "dea97b.67941688",
-        "group": "580da1de.bede3",
-        "order": 6,
-        "width": "10",
-        "height": "1",
-        "name": "Compteur accélération instantanée",
-        "label": "Accélération instantanée",
-        "format": "{{msg.payload}} km/s²",
-        "layout": "row-spread",
-        "x": 440,
-        "y": 260,
-        "wires": []
+    {  
+       "id":"c6a7a333.d21c7",
+       "type":"ui_text",
+       "z":"dea97b.67941688",
+       "group":"580da1de.bede3",
+       "order":4,
+       "width":"10",
+       "height":"1",
+       "name":"Compteur vitesse moyenne / tours",
+       "label":"Vitesse moyenne / tours",
+       "format":"{{msg.payload}} km/h",
+       "layout":"row-spread",
+       "x":740,
+       "y":200,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "790a3e07.88098",
-        "type": "ui_slider",
-        "z": "dea97b.67941688",
-        "name": "",
-        "label": "slider",
-        "group": "580da1de.bede3",
-        "order": 7,
-        "width": "0",
-        "height": "0",
-        "passthru": true,
-        "outs": "all",
-        "topic": "",
-        "min": 0,
-        "max": "250",
-        "step": 1,
-        "x": 110,
-        "y": 160,
-        "wires": [
-            [
-                "f2c02a74.4cab58",
-                "c6a7a333.d21c7",
-                "9e24971f.824498",
-                "ac3a8f11.13285"
-            ]
-        ]
+    {  
+       "id":"790a3e07.88098",
+       "type":"ui_slider",
+       "z":"dea97b.67941688",
+       "name":"",
+       "label":"slider",
+       "group":"580da1de.bede3",
+       "order":7,
+       "width":"0",
+       "height":"0",
+       "passthru":true,
+       "outs":"all",
+       "topic":"",
+       "min":0,
+       "max":"250",
+       "step":1,
+       "x":110,
+       "y":160,
+       "wires":[  
+          [  
+             "f2c02a74.4cab58",
+             "c6a7a333.d21c7",
+             "ac3a8f11.13285",
+             "8af4993d.147778"
+          ]
+       ]
     },
-    {
-        "id": "fddc60e5.c7727",
-        "type": "ui_slider",
-        "z": "dea97b.67941688",
-        "name": "",
-        "label": "slider",
-        "group": "6969920.2c3eb7",
-        "order": 7,
-        "width": "0",
-        "height": "0",
-        "passthru": true,
-        "outs": "all",
-        "topic": "",
-        "min": 0,
-        "max": "50",
-        "step": 1,
-        "x": 110,
-        "y": 780,
-        "wires": [
-            [
-                "7b1b62df.8b6f7c",
-                "74b94b33.818944",
-                "6e32706c.ad0eb",
-                "74b2d005.ff323"
-            ]
-        ]
+    {  
+       "id":"fddc60e5.c7727",
+       "type":"ui_slider",
+       "z":"dea97b.67941688",
+       "name":"",
+       "label":"slider",
+       "group":"6969920.2c3eb7",
+       "order":7,
+       "width":"0",
+       "height":"0",
+       "passthru":true,
+       "outs":"all",
+       "topic":"",
+       "min":0,
+       "max":"50",
+       "step":1,
+       "x":100,
+       "y":1120,
+       "wires":[  
+          [  
+             "7b1b62df.8b6f7c",
+             "74b94b33.818944",
+             "6e32706c.ad0eb",
+             "74b2d005.ff323"
+          ]
+       ]
     },
-    {
-        "id": "9fedbb5a.706a38",
-        "type": "ui_text",
-        "z": "cd75b7b8.8a7de8",
-        "group": "b6adabb1.b169a8",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "text",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 630,
-        "y": 140,
-        "wires": []
+    {  
+       "id":"9fedbb5a.706a38",
+       "type":"ui_text",
+       "z":"cd75b7b8.8a7de8",
+       "group":"b6adabb1.b169a8",
+       "order":0,
+       "width":0,
+       "height":0,
+       "name":"",
+       "label":"text",
+       "format":"{{msg.payload}}",
+       "layout":"row-spread",
+       "x":630,
+       "y":140,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "dc55629f.46d9e",
-        "type": "ui_text",
-        "z": "cd75b7b8.8a7de8",
-        "group": "b6adabb1.b169a8",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Tension",
-        "format": "{{msg.payload}} Volts",
-        "layout": "row-spread",
-        "x": 640,
-        "y": 220,
-        "wires": []
+    {  
+       "id":"dc55629f.46d9e",
+       "type":"ui_text",
+       "z":"cd75b7b8.8a7de8",
+       "group":"b6adabb1.b169a8",
+       "order":0,
+       "width":0,
+       "height":0,
+       "name":"",
+       "label":"Tension",
+       "format":"{{msg.payload}} Volts",
+       "layout":"row-spread",
+       "x":640,
+       "y":220,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "aa10f1d9.485",
-        "type": "serial in",
-        "z": "cd75b7b8.8a7de8",
-        "name": "série1",
-        "serial": "35fe7237.eaacae",
-        "x": 70,
-        "y": 120,
-        "wires": [
-            [
-                "9fedbb5a.706a38",
-                "d0840ac5.d8cd28",
-                "5114d734.044c18"
-            ]
-        ]
+    {  
+       "id":"aa10f1d9.485",
+       "type":"serial in",
+       "z":"cd75b7b8.8a7de8",
+       "name":"série1",
+       "serial":"35fe7237.eaacae",
+       "x":70,
+       "y":120,
+       "wires":[  
+          [  
+             "9fedbb5a.706a38",
+             "d0840ac5.d8cd28",
+             "5114d734.044c18"
+          ]
+       ]
     },
-    {
-        "id": "6e32706c.ad0eb",
-        "type": "ui_text",
-        "z": "dea97b.67941688",
-        "group": "6969920.2c3eb7",
-        "order": 3,
-        "width": "0",
-        "height": "0",
-        "name": "Compteur tours",
-        "label": "Nombre de tours",
-        "format": "{{msg.payload}} tours",
-        "layout": "row-spread",
-        "x": 380,
-        "y": 680,
-        "wires": []
+    {  
+       "id":"6e32706c.ad0eb",
+       "type":"ui_text",
+       "z":"dea97b.67941688",
+       "group":"6969920.2c3eb7",
+       "order":3,
+       "width":"0",
+       "height":"0",
+       "name":"Compteur tours",
+       "label":"Nombre de tours",
+       "format":"{{msg.payload}} tours",
+       "layout":"row-spread",
+       "x":370,
+       "y":1020,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "7b1b62df.8b6f7c",
-        "type": "ui_text",
-        "z": "dea97b.67941688",
-        "group": "6969920.2c3eb7",
-        "order": 3,
-        "width": "0",
-        "height": "0",
-        "name": "Chronomètre course",
-        "label": "Chronomètre de la course",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 400,
-        "y": 740,
-        "wires": []
+    {  
+       "id":"7b1b62df.8b6f7c",
+       "type":"ui_text",
+       "z":"dea97b.67941688",
+       "group":"6969920.2c3eb7",
+       "order":3,
+       "width":"0",
+       "height":"0",
+       "name":"Chronomètre course",
+       "label":"Chronomètre de la course",
+       "format":"{{msg.payload}}",
+       "layout":"row-spread",
+       "x":390,
+       "y":1080,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "74b94b33.818944",
-        "type": "ui_text",
-        "z": "dea97b.67941688",
-        "group": "6969920.2c3eb7",
-        "order": 3,
-        "width": "0",
-        "height": "0",
-        "name": "Chronomètre tour",
-        "label": "Chronomètre du tour",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 390,
-        "y": 800,
-        "wires": []
+    {  
+       "id":"74b94b33.818944",
+       "type":"ui_text",
+       "z":"dea97b.67941688",
+       "group":"6969920.2c3eb7",
+       "order":3,
+       "width":"0",
+       "height":"0",
+       "name":"Chronomètre tour",
+       "label":"Chronomètre du tour",
+       "format":"{{msg.payload}}",
+       "layout":"row-spread",
+       "x":380,
+       "y":1140,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "11b54e4.d1c72b2",
-        "type": "ui_text",
-        "z": "cd75b7b8.8a7de8",
-        "group": "b6adabb1.b169a8",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Intensité",
-        "format": "{{msg.payload}} Ampere",
-        "layout": "row-spread",
-        "x": 640,
-        "y": 300,
-        "wires": []
+    {  
+       "id":"11b54e4.d1c72b2",
+       "type":"ui_text",
+       "z":"cd75b7b8.8a7de8",
+       "group":"b6adabb1.b169a8",
+       "order":0,
+       "width":0,
+       "height":0,
+       "name":"",
+       "label":"Intensité",
+       "format":"{{msg.payload}} Ampere",
+       "layout":"row-spread",
+       "x":640,
+       "y":300,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "770b2ab0.da2a04",
-        "type": "comment",
-        "z": "dea97b.67941688",
-        "name": "Batterie",
-        "info": "",
-        "x": 90,
-        "y": 320,
-        "wires": []
+    {  
+       "id":"770b2ab0.da2a04",
+       "type":"comment",
+       "z":"dea97b.67941688",
+       "name":"Batterie",
+       "info":"",
+       "x":90,
+       "y":740,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "c25b076b.28b188",
-        "type": "ui_gauge",
-        "z": "dea97b.67941688",
-        "name": "Charge batterie",
-        "group": "a0c3baf.c141e48",
-        "order": 2,
-        "width": "5",
-        "height": "4",
-        "gtype": "donut",
-        "title": "Charge de la batterie",
-        "label": "%",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "100",
-        "colors": [
-            "#ca3838",
-            "#e6e600",
-            "#00b500"
-        ],
-        "seg1": "15",
-        "seg2": "35",
-        "x": 480,
-        "y": 360,
-        "wires": []
+    {  
+       "id":"c25b076b.28b188",
+       "type":"ui_gauge",
+       "z":"dea97b.67941688",
+       "name":"Charge batterie",
+       "group":"a0c3baf.c141e48",
+       "order":2,
+       "width":"5",
+       "height":"4",
+       "gtype":"donut",
+       "title":"Charge de la batterie",
+       "label":"%",
+       "format":"{{value}}",
+       "min":0,
+       "max":"100",
+       "colors":[  
+          "#ca3838",
+          "#e6e600",
+          "#00b500"
+       ],
+       "seg1":"15",
+       "seg2":"35",
+       "x":480,
+       "y":780,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "d0840ac5.d8cd28",
-        "type": "function",
-        "z": "cd75b7b8.8a7de8",
-        "name": "split data",
-        "func": "var msg1={};\nvar msg2={};\nvar msg3={};\nvar msg4={};\nvar msg5={};\nvar p_fournie = {};\no=msg.payload.split(\";\");\nmsg1.payload=o[0];\nmsg2.payload=o[1];\np_fournie.payload = o[0]*o[1];\nmsg3.payload=o[2];\nmsg4.payload=o[3];\nmsg5.payload=o[4];\nreturn [msg1,msg2,p_fournie,msg3,msg4,msg5];",
-        "outputs": 6,
-        "noerr": 0,
-        "x": 420,
-        "y": 340,
-        "wires": [
-            [
-                "f89322.b41b5ce",
-                "dc55629f.46d9e"
-            ],
-            [
-                "11b54e4.d1c72b2",
-                "5fb824ca.7f668c"
-            ],
-            [
-                "4534bc2c.2cb614"
-            ],
-            [
-                "771569f8.b8b5d8",
-                "a199a0d8.27074"
-            ],
-            [
-                "10566fbb.9cac7"
-            ],
-            [
-                "4f93a7be.a1f398"
-            ]
-        ]
+    {  
+       "id":"d0840ac5.d8cd28",
+       "type":"function",
+       "z":"cd75b7b8.8a7de8",
+       "name":"split data",
+       "func":"var msg1={};\nvar msg2={};\nvar msg3={};\nvar msg4={};\nvar msg5={};\nvar msg6={};\nvar p_fournie = {};\no=msg.payload.split(\",\");\nmsg1.payload=o[0];\nmsg2.payload=o[1];\np_fournie.payload = o[0]*o[1];\nmsg3.payload=o[2];\nmsg4.payload=o[3];\nmsg5.payload=o[4];\nmsg6.payload=o[5];\nreturn [msg1,msg2,p_fournie,msg3,msg4,msg5,msg6];",
+       "outputs":7,
+       "noerr":0,
+       "x":420,
+       "y":340,
+       "wires":[  
+          [  
+             "f89322.b41b5ce",
+             "dc55629f.46d9e"
+          ],
+          [  
+             "11b54e4.d1c72b2",
+             "5fb824ca.7f668c"
+          ],
+          [  
+             "4534bc2c.2cb614"
+          ],
+          [  
+             "771569f8.b8b5d8",
+             "a199a0d8.27074"
+          ],
+          [  
+             "10566fbb.9cac7"
+          ],
+          [  
+             "4f93a7be.a1f398"
+          ],
+          [  
+             "89007735.805e48",
+             "3241d820.350ed"
+          ]
+       ]
     },
-    {
-        "id": "771569f8.b8b5d8",
-        "type": "ui_text",
-        "z": "cd75b7b8.8a7de8",
-        "group": "b6adabb1.b169a8",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Coordonnés",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 650,
-        "y": 420,
-        "wires": []
+    {  
+       "id":"771569f8.b8b5d8",
+       "type":"ui_text",
+       "z":"cd75b7b8.8a7de8",
+       "group":"b6adabb1.b169a8",
+       "order":0,
+       "width":0,
+       "height":0,
+       "name":"",
+       "label":"Coordonnés",
+       "format":"{{msg.payload}}",
+       "layout":"row-spread",
+       "x":650,
+       "y":420,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "10566fbb.9cac7",
-        "type": "ui_text",
-        "z": "cd75b7b8.8a7de8",
-        "group": "b6adabb1.b169a8",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "gsfdg",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 630,
-        "y": 500,
-        "wires": []
+    {  
+       "id":"10566fbb.9cac7",
+       "type":"ui_text",
+       "z":"cd75b7b8.8a7de8",
+       "group":"b6adabb1.b169a8",
+       "order":0,
+       "width":0,
+       "height":0,
+       "name":"",
+       "label":"gsfdg",
+       "format":"{{msg.payload}}",
+       "layout":"row-spread",
+       "x":630,
+       "y":500,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "4f93a7be.a1f398",
-        "type": "ui_text",
-        "z": "cd75b7b8.8a7de8",
-        "group": "b6adabb1.b169a8",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "distance total",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 650,
-        "y": 540,
-        "wires": []
+    {  
+       "id":"4f93a7be.a1f398",
+       "type":"ui_text",
+       "z":"cd75b7b8.8a7de8",
+       "group":"b6adabb1.b169a8",
+       "order":0,
+       "width":0,
+       "height":0,
+       "name":"",
+       "label":"distance total",
+       "format":"{{msg.payload}}",
+       "layout":"row-spread",
+       "x":650,
+       "y":540,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "39f379c8.6d2656",
-        "type": "ui_text",
-        "z": "dea97b.67941688",
-        "group": "a0c3baf.c141e48",
-        "order": 3,
-        "width": "5",
-        "height": "2",
-        "name": "",
-        "label": "Tension de la batterie",
-        "format": "{{msg.payload}} Volts",
-        "layout": "col-center",
-        "x": 240,
-        "y": 400,
-        "wires": []
+    {  
+       "id":"39f379c8.6d2656",
+       "type":"ui_text",
+       "z":"dea97b.67941688",
+       "group":"a0c3baf.c141e48",
+       "order":3,
+       "width":"5",
+       "height":"2",
+       "name":"",
+       "label":"Tension de la batterie",
+       "format":"{{msg.payload}} Volts",
+       "layout":"col-center",
+       "x":240,
+       "y":820,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "5a465c21.751fb4",
-        "type": "ui_text",
-        "z": "dea97b.67941688",
-        "group": "a0c3baf.c141e48",
-        "order": 5,
-        "width": "0",
-        "height": "0",
-        "name": "Puissance fournie instantanée",
-        "label": "Puissance fournie instantanée",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 520,
-        "y": 460,
-        "wires": []
+    {  
+       "id":"5a465c21.751fb4",
+       "type":"ui_text",
+       "z":"dea97b.67941688",
+       "group":"a0c3baf.c141e48",
+       "order":5,
+       "width":"0",
+       "height":"0",
+       "name":"Puissance fournie instantanée",
+       "label":"Puissance fournie instantanée",
+       "format":"{{msg.payload}}",
+       "layout":"row-spread",
+       "x":520,
+       "y":880,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "74b2d005.ff323",
-        "type": "ui_text",
-        "z": "dea97b.67941688",
-        "group": "6969920.2c3eb7",
-        "order": 3,
-        "width": "0",
-        "height": "0",
-        "name": "Distance tour",
-        "label": "Distance du tour",
-        "format": "{{msg.payload}} km",
-        "layout": "row-spread",
-        "x": 370,
-        "y": 860,
-        "wires": []
+    {  
+       "id":"74b2d005.ff323",
+       "type":"ui_text",
+       "z":"dea97b.67941688",
+       "group":"6969920.2c3eb7",
+       "order":3,
+       "width":"0",
+       "height":"0",
+       "name":"Distance tour",
+       "label":"Distance du tour",
+       "format":"{{msg.payload}} km",
+       "layout":"row-spread",
+       "x":360,
+       "y":1200,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "5da66be0.06eff4",
-        "type": "comment",
-        "z": "dea97b.67941688",
-        "name": "Communication avec le pilote",
-        "info": "",
-        "x": 160,
-        "y": 920,
-        "wires": []
+    {  
+       "id":"5da66be0.06eff4",
+       "type":"comment",
+       "z":"dea97b.67941688",
+       "name":"Communication avec le pilote",
+       "info":"",
+       "x":160,
+       "y":1240,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "d4bffced.5ff5b",
-        "type": "ui_form",
-        "z": "dea97b.67941688",
-        "name": "Formulaire",
-        "label": "Envoyer un message au pilote",
-        "group": "5682d830.f6b2b8",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "options": [
-            {
-                "label": "Ecrire un message",
-                "value": "message",
-                "type": "text",
-                "required": false
-            }
-        ],
-        "formValue": {
-            "message": ""
-        },
-        "payload": "",
-        "submit": "Envoyer",
-        "cancel": "Annuler",
-        "topic": "topic",
-        "x": 140,
-        "y": 980,
-        "wires": [
-            [
-                "8fca5c31.ab0bc"
-            ]
-        ]
+    {  
+       "id":"d4bffced.5ff5b",
+       "type":"ui_form",
+       "z":"dea97b.67941688",
+       "name":"Formulaire",
+       "label":"Envoyer un message au pilote",
+       "group":"5682d830.f6b2b8",
+       "order":0,
+       "width":0,
+       "height":0,
+       "options":[  
+          {  
+             "label":"Ecrire un message",
+             "value":"message",
+             "type":"text",
+             "required":false
+          }
+       ],
+       "formValue":{  
+          "message":""
+       },
+       "payload":"",
+       "submit":"Envoyer",
+       "cancel":"Annuler",
+       "topic":"topic",
+       "x":140,
+       "y":1300,
+       "wires":[  
+          [  
+             "8fca5c31.ab0bc"
+          ]
+       ]
     },
-    {
-        "id": "b67c910c.f9917",
-        "type": "debug",
-        "z": "cd75b7b8.8a7de8",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "x": 410,
-        "y": 40,
-        "wires": []
+    {  
+       "id":"b67c910c.f9917",
+       "type":"debug",
+       "z":"cd75b7b8.8a7de8",
+       "name":"",
+       "active":true,
+       "tosidebar":true,
+       "console":false,
+       "tostatus":false,
+       "complete":"payload",
+       "x":410,
+       "y":40,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "b35362e8.c01fe",
-        "type": "comment",
-        "z": "dea97b.67941688",
-        "name": "Incruster la map dans le dashboard",
-        "info": "This example shows how to embed the Worldmap \ninto a template node within the `node-red-dashboard`\n\nThe first flow creates a dashboard button that \ngenerates a randon position, with the required \nicon, and passes that to the worldmap. The\nmap is configured to automatically pan to the\nposition of any point that arrives.\n\nThe second flow initialise the dashboard template\nwith the initial map and sets it to a more square shape\nby adjusting the height.",
-        "x": 180,
-        "y": 1020,
-        "wires": []
+    {  
+       "id":"b35362e8.c01fe",
+       "type":"comment",
+       "z":"dea97b.67941688",
+       "name":"Incruster la map dans le dashboard",
+       "info":"This example shows how to embed the Worldmap \ninto a template node within the `node-red-dashboard`\n\nThe first flow creates a dashboard button that \ngenerates a randon position, with the required \nicon, and passes that to the worldmap. The\nmap is configured to automatically pan to the\nposition of any point that arrives.\n\nThe second flow initialise the dashboard template\nwith the initial map and sets it to a more square shape\nby adjusting the height.",
+       "x":180,
+       "y":1360,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "d64d5409.11aa18",
-        "type": "worldmap",
-        "z": "dea97b.67941688",
-        "name": "",
-        "lat": "43.91535",
-        "lon": "2.11352",
-        "zoom": "16",
-        "layer": "OSM",
-        "cluster": "",
-        "maxage": "",
-        "usermenu": "hide",
-        "layers": "hide",
-        "panit": "true",
-        "path": "",
-        "x": 570,
-        "y": 1120,
-        "wires": []
+    {  
+       "id":"d64d5409.11aa18",
+       "type":"worldmap",
+       "z":"dea97b.67941688",
+       "name":"",
+       "lat":"43.91535",
+       "lon":"2.11352",
+       "zoom":"16",
+       "layer":"OSM",
+       "cluster":"",
+       "maxage":"",
+       "usermenu":"hide",
+       "layers":"hide",
+       "panit":"true",
+       "path":"",
+       "x":570,
+       "y":1460,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "1f814755.43ae89",
-        "type": "inject",
-        "z": "dea97b.67941688",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "str",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": "",
-        "x": 110,
-        "y": 1060,
-        "wires": [
-            [
-                "6055de73.037d4"
-            ]
-        ]
+    {  
+       "id":"1f814755.43ae89",
+       "type":"inject",
+       "z":"dea97b.67941688",
+       "name":"",
+       "topic":"",
+       "payload":"",
+       "payloadType":"str",
+       "repeat":"",
+       "crontab":"",
+       "once":false,
+       "onceDelay":"",
+       "x":110,
+       "y":1400,
+       "wires":[  
+          [  
+             "6055de73.037d4"
+          ]
+       ]
     },
-    {
-        "id": "6055de73.037d4",
-        "type": "function",
-        "z": "dea97b.67941688",
-        "name": "",
-        "func": "// Split data\ngps=msg.payload.split(\":\");\n\nmsg.payload = {\n    lat:gps[0],\n    lon:gps[1],\n    name:\"Voiture\",\n    icon:\"fa-car\",\n    iconColor: \"#FF0000\"\n};\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 370,
-        "y": 1120,
-        "wires": [
-            [
-                "d64d5409.11aa18"
-            ]
-        ]
+    {  
+       "id":"6055de73.037d4",
+       "type":"function",
+       "z":"dea97b.67941688",
+       "name":"map json",
+       "func":"// Split data\ngps=msg.payload.split(\":\");\n\nmsg.payload = {\n    lat:gps[0],\n    lon:gps[1],\n    name:\"Voiture\",\n    icon:\"fa-car\",\n    iconColor: \"#FF0000\"\n};\nreturn msg;\n",
+       "outputs":1,
+       "noerr":0,
+       "x":380,
+       "y":1460,
+       "wires":[  
+          [  
+             "d64d5409.11aa18"
+          ]
+       ]
     },
-    {
-        "id": "1d8ee5c9.63fe7a",
-        "type": "inject",
-        "z": "dea97b.67941688",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "str",
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "",
-        "x": 110,
-        "y": 1180,
-        "wires": [
-            [
-                "99be12e1.3077f"
-            ]
-        ]
+    {  
+       "id":"1d8ee5c9.63fe7a",
+       "type":"inject",
+       "z":"dea97b.67941688",
+       "name":"",
+       "topic":"",
+       "payload":"",
+       "payloadType":"str",
+       "repeat":"",
+       "crontab":"",
+       "once":true,
+       "onceDelay":"",
+       "x":110,
+       "y":1520,
+       "wires":[  
+          [  
+             "99be12e1.3077f"
+          ]
+       ]
     },
-    {
-        "id": "48d262f1.ac838c",
-        "type": "ui_template",
-        "z": "dea97b.67941688",
-        "group": "c9c4314f.14801",
-        "name": "",
-        "order": 0,
-        "width": "26",
-        "height": "10",
-        "format": "<div ng-bind-html=\"msg.payload | trusted\"></div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 560,
-        "y": 1180,
-        "wires": [
-            []
-        ]
+    {  
+       "id":"48d262f1.ac838c",
+       "type":"ui_template",
+       "z":"dea97b.67941688",
+       "group":"c9c4314f.14801",
+       "name":"",
+       "order":0,
+       "width":"26",
+       "height":"10",
+       "format":"<div ng-bind-html=\"msg.payload | trusted\"></div>",
+       "storeOutMessages":true,
+       "fwdInMessages":true,
+       "templateScope":"local",
+       "x":560,
+       "y":1520,
+       "wires":[  
+          [  
+ 
+          ]
+       ]
     },
-    {
-        "id": "99be12e1.3077f",
-        "type": "template",
-        "z": "dea97b.67941688",
-        "name": "",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "<center>\n    <iframe \n        src=\"../worldmap\"\n        style=\"height:500px;width:1300px;\"\n    >\n    </iframe>\n</center>",
-        "x": 380,
-        "y": 1180,
-        "wires": [
-            [
-                "48d262f1.ac838c"
-            ]
-        ]
+    {  
+       "id":"99be12e1.3077f",
+       "type":"template",
+       "z":"dea97b.67941688",
+       "name":"",
+       "field":"payload",
+       "fieldType":"msg",
+       "format":"handlebars",
+       "syntax":"mustache",
+       "template":"<center>\n    <iframe \n        src=\"../worldmap\"\n        style=\"height:500px;width:1300px;\"\n    >\n    </iframe>\n</center>",
+       "x":380,
+       "y":1520,
+       "wires":[  
+          [  
+             "48d262f1.ac838c"
+          ]
+       ]
     },
-    {
-        "id": "f89322.b41b5ce",
-        "type": "link out",
-        "z": "cd75b7b8.8a7de8",
-        "name": "Valeur de la tension",
-        "links": [
-            "4dd626f.1b21ed8"
-        ],
-        "x": 595,
-        "y": 260,
-        "wires": []
+    {  
+       "id":"f89322.b41b5ce",
+       "type":"link out",
+       "z":"cd75b7b8.8a7de8",
+       "name":"Valeur de la tension",
+       "links":[  
+          "4dd626f.1b21ed8"
+       ],
+       "x":595,
+       "y":260,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "4dd626f.1b21ed8",
-        "type": "link in",
-        "z": "dea97b.67941688",
-        "name": "Valeur de la tension",
-        "links": [
-            "f89322.b41b5ce"
-        ],
-        "x": 75,
-        "y": 360,
-        "wires": [
-            [
-                "39f379c8.6d2656",
-                "b466caba.2c2ec8"
-            ]
-        ]
+    {  
+       "id":"4dd626f.1b21ed8",
+       "type":"link in",
+       "z":"dea97b.67941688",
+       "name":"Valeur de la tension",
+       "links":[  
+          "f89322.b41b5ce"
+       ],
+       "x":75,
+       "y":780,
+       "wires":[  
+          [  
+             "39f379c8.6d2656",
+             "b466caba.2c2ec8"
+          ]
+       ]
     },
-    {
-        "id": "b466caba.2c2ec8",
-        "type": "function",
-        "z": "dea97b.67941688",
-        "name": "Charge batterie",
-        "func": "var load = {};\nload.payload = (msg.payload*100)/52;\nload.payload = Math.round(load.payload*10)/10;\nreturn load;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 220,
-        "y": 360,
-        "wires": [
-            [
-                "c25b076b.28b188"
-            ]
-        ]
+    {  
+       "id":"b466caba.2c2ec8",
+       "type":"function",
+       "z":"dea97b.67941688",
+       "name":"Charge batterie",
+       "func":"var load = {};\nload.payload = (msg.payload*100)/52;\nload.payload = Math.round(load.payload*10)/10;\nreturn load;",
+       "outputs":1,
+       "noerr":0,
+       "x":220,
+       "y":780,
+       "wires":[  
+          [  
+             "c25b076b.28b188"
+          ]
+       ]
     },
-    {
-        "id": "5114d734.044c18",
-        "type": "serial out",
-        "z": "cd75b7b8.8a7de8",
-        "name": "expeditattor",
-        "serial": "35fe7237.eaacae",
-        "x": 330,
-        "y": 560,
-        "wires": []
+    {  
+       "id":"5114d734.044c18",
+       "type":"serial out",
+       "z":"cd75b7b8.8a7de8",
+       "name":"expeditattor",
+       "serial":"35fe7237.eaacae",
+       "x":330,
+       "y":560,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "d16a8536.450408",
-        "type": "ui_text",
-        "z": "dea97b.67941688",
-        "group": "a0c3baf.c141e48",
-        "order": 4,
-        "width": "5",
-        "height": "2",
-        "name": "",
-        "label": "Intensité de la batterie",
-        "format": "{{msg.payload}} Ampères",
-        "layout": "col-center",
-        "x": 240,
-        "y": 460,
-        "wires": []
+    {  
+       "id":"d16a8536.450408",
+       "type":"ui_text",
+       "z":"dea97b.67941688",
+       "group":"a0c3baf.c141e48",
+       "order":4,
+       "width":"5",
+       "height":"2",
+       "name":"",
+       "label":"Intensité de la batterie",
+       "format":"{{msg.payload}} Ampères",
+       "layout":"col-center",
+       "x":240,
+       "y":880,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "5fb824ca.7f668c",
-        "type": "link out",
-        "z": "cd75b7b8.8a7de8",
-        "name": "Valeur de l'intensité",
-        "links": [
-            "8805b2f9.d2e0d"
-        ],
-        "x": 595,
-        "y": 340,
-        "wires": []
+    {  
+       "id":"5fb824ca.7f668c",
+       "type":"link out",
+       "z":"cd75b7b8.8a7de8",
+       "name":"Valeur de l'intensité",
+       "links":[  
+          "8805b2f9.d2e0d"
+       ],
+       "x":595,
+       "y":340,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "8805b2f9.d2e0d",
-        "type": "link in",
-        "z": "dea97b.67941688",
-        "name": "",
-        "links": [
-            "5fb824ca.7f668c"
-        ],
-        "x": 75,
-        "y": 460,
-        "wires": [
-            [
-                "d16a8536.450408"
-            ]
-        ]
+    {  
+       "id":"8805b2f9.d2e0d",
+       "type":"link in",
+       "z":"dea97b.67941688",
+       "name":"",
+       "links":[  
+          "5fb824ca.7f668c"
+       ],
+       "x":75,
+       "y":880,
+       "wires":[  
+          [  
+             "d16a8536.450408"
+          ]
+       ]
     },
-    {
-        "id": "654d05e.4656bfc",
-        "type": "function",
-        "z": "dea97b.67941688",
-        "name": "Puissance fournie",
-        "func": "var power = {};\npower.payload = Math.round(msg.payload*100)/100;\nif(power.payload < 1000)\n{\n    power.payload = power.payload.toString() + \" Watts\";\n}\nelse if(power.payload > 1000)\n{\n    power.payload = power.payload/1000;\n    power.payload = Math.round(power.payload*10)/10\n    power.payload = power.payload.toString() + \" Kilowatts\"\n}\nreturn power;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 230,
-        "y": 500,
-        "wires": [
-            [
-                "5a465c21.751fb4"
-            ]
-        ]
+    {  
+       "id":"654d05e.4656bfc",
+       "type":"function",
+       "z":"dea97b.67941688",
+       "name":"Puissance fournie",
+       "func":"var power = {};\npower.payload = Math.round(msg.payload*100)/100;\nif(power.payload < 1000)\n{\n    power.payload = power.payload.toString() + \" Watts\";\n}\nelse if(power.payload > 1000)\n{\n    power.payload = power.payload/1000;\n    power.payload = Math.round(power.payload*10)/10\n    power.payload = power.payload.toString() + \" Kilowatts\"\n}\nreturn power;",
+       "outputs":1,
+       "noerr":0,
+       "x":230,
+       "y":920,
+       "wires":[  
+          [  
+             "5a465c21.751fb4"
+          ]
+       ]
     },
-    {
-        "id": "4534bc2c.2cb614",
-        "type": "link out",
-        "z": "cd75b7b8.8a7de8",
-        "name": "Puissance absorbée",
-        "links": [
-            "376b617e.4cb19e"
-        ],
-        "x": 595,
-        "y": 380,
-        "wires": []
+    {  
+       "id":"4534bc2c.2cb614",
+       "type":"link out",
+       "z":"cd75b7b8.8a7de8",
+       "name":"Puissance absorbée",
+       "links":[  
+          "376b617e.4cb19e"
+       ],
+       "x":595,
+       "y":380,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "376b617e.4cb19e",
-        "type": "link in",
-        "z": "dea97b.67941688",
-        "name": "",
-        "links": [
-            "4534bc2c.2cb614"
-        ],
-        "x": 75,
-        "y": 500,
-        "wires": [
-            [
-                "654d05e.4656bfc"
-            ]
-        ]
+    {  
+       "id":"376b617e.4cb19e",
+       "type":"link in",
+       "z":"dea97b.67941688",
+       "name":"",
+       "links":[  
+          "4534bc2c.2cb614"
+       ],
+       "x":75,
+       "y":920,
+       "wires":[  
+          [  
+             "654d05e.4656bfc"
+          ]
+       ]
     },
-    {
-        "id": "a199a0d8.27074",
-        "type": "link out",
-        "z": "cd75b7b8.8a7de8",
-        "name": "Coordonnées GPS",
-        "links": [
-            "18adcac3.cdfff5"
-        ],
-        "x": 595,
-        "y": 460,
-        "wires": []
+    {  
+       "id":"a199a0d8.27074",
+       "type":"link out",
+       "z":"cd75b7b8.8a7de8",
+       "name":"Coordonnées GPS",
+       "links":[  
+          "18adcac3.cdfff5"
+       ],
+       "x":595,
+       "y":460,
+       "wires":[  
+ 
+       ]
     },
-    {
-        "id": "18adcac3.cdfff5",
-        "type": "link in",
-        "z": "dea97b.67941688",
-        "name": "",
-        "links": [
-            "a199a0d8.27074"
-        ],
-        "x": 55,
-        "y": 1120,
-        "wires": [
-            [
-                "6055de73.037d4"
-            ]
-        ]
+    {  
+       "id":"18adcac3.cdfff5",
+       "type":"link in",
+       "z":"dea97b.67941688",
+       "name":"",
+       "links":[  
+          "a199a0d8.27074"
+       ],
+       "x":55,
+       "y":1460,
+       "wires":[  
+          [  
+             "6055de73.037d4"
+          ]
+       ]
     },
-    {
-        "id": "8fca5c31.ab0bc",
-        "type": "serial out",
-        "z": "dea97b.67941688",
-        "name": "expeditattor",
-        "serial": "35fe7237.eaacae",
-        "x": 710,
-        "y": 980,
-        "wires": []
+    {  
+       "id":"8fca5c31.ab0bc",
+       "type":"serial out",
+       "z":"dea97b.67941688",
+       "name":"expeditattor",
+       "serial":"35fe7237.eaacae",
+       "x":710,
+       "y":1300,
+       "wires":[  
+ 
+       ]
+    },
+    {  
+       "id":"900f88e1.7f7c68",
+       "type":"comment",
+       "z":"dea97b.67941688",
+       "name":"Statistiques de la transmission",
+       "info":"",
+       "x":160,
+       "y":1600,
+       "wires":[  
+ 
+       ]
+    },
+    {  
+       "id":"89007735.805e48",
+       "type":"ui_text",
+       "z":"cd75b7b8.8a7de8",
+       "group":"b6adabb1.b169a8",
+       "order":0,
+       "width":0,
+       "height":0,
+       "name":"",
+       "label":"Ping",
+       "format":"{{msg.payload}}",
+       "layout":"row-spread",
+       "x":630,
+       "y":580,
+       "wires":[  
+ 
+       ]
+    },
+    {  
+       "id":"8da21d5a.71ab3",
+       "type":"ui_text",
+       "z":"dea97b.67941688",
+       "group":"9bb2332d.68b96",
+       "order":0,
+       "width":0,
+       "height":0,
+       "name":"",
+       "label":"Latence",
+       "format":"{{msg.payload}} ms",
+       "layout":"row-spread",
+       "x":240,
+       "y":1640,
+       "wires":[  
+ 
+       ]
+    },
+    {  
+       "id":"3241d820.350ed",
+       "type":"link out",
+       "z":"cd75b7b8.8a7de8",
+       "name":"Valeur de la latence",
+       "links":[  
+          "cc6eb10f.a332d8"
+       ],
+       "x":595,
+       "y":620,
+       "wires":[  
+ 
+       ]
+    },
+    {  
+       "id":"cc6eb10f.a332d8",
+       "type":"link in",
+       "z":"dea97b.67941688",
+       "name":"",
+       "links":[  
+          "3241d820.350ed"
+       ],
+       "x":55,
+       "y":1640,
+       "wires":[  
+          [  
+             "8da21d5a.71ab3"
+          ]
+       ]
     }
-]
+ ]
