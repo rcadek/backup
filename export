@@ -1115,15 +1115,14 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "repeat": "5",
+        "repeat": "3",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
         "x": 130,
         "y": 400,
         "wires": [
             [
-                "d1ce7044.672cb",
                 "af61aa63.567238"
             ]
         ]
@@ -1132,50 +1131,16 @@
         "id": "d1ce7044.672cb",
         "type": "function",
         "z": "a4f481d6.61699",
-        "name": "",
-        "func": "return msg.toString() + ';';",
+        "name": "Vitesse actuelle",
+        "func": "var number = msg.payload;\nmsg.payload = number + \";\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 310,
-        "y": 400,
+        "x": 380,
+        "y": 280,
         "wires": [
             [
-                "9d54fa11.e6acb8",
+                "4fc56c42.e49b04",
                 "585eb25d.40f7fc"
-            ]
-        ]
-    },
-    {
-        "id": "9d54fa11.e6acb8",
-        "type": "debug",
-        "z": "a4f481d6.61699",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "x": 490,
-        "y": 400,
-        "wires": []
-    },
-    {
-        "id": "4076d3bf.c3670c",
-        "type": "inject",
-        "z": "a4f481d6.61699",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "x": 130,
-        "y": 520,
-        "wires": [
-            [
-                "af61aa63.567238"
             ]
         ]
     },
@@ -1187,8 +1152,8 @@
         "func": "var msg;\nvar today = new Date();\nvar dd = today.getDate();\nvar mm = today.getMonth() + 1; //January is 0!\n\nvar yyyy = today.getFullYear();\nif (dd < 10) {\n  dd = '0' + dd;\n} \nif (mm < 10) {\n  mm = '0' + mm;\n} \nmsg.filename = '/home/pi/average_speed_' + dd + '_' + mm + '_' + yyyy + '.json';\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 330,
-        "y": 520,
+        "x": 370,
+        "y": 480,
         "wires": [
             [
                 "585eb25d.40f7fc"
@@ -1203,11 +1168,37 @@
         "filename": "",
         "appendNewline": false,
         "createDir": true,
-        "overwriteFile": "false",
-        "x": 570,
-        "y": 520,
+        "overwriteFile": "true",
+        "x": 910,
+        "y": 480,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "21535e45.82c3d2",
+        "type": "average",
+        "z": "a4f481d6.61699",
+        "name": "",
+        "topic": "",
+        "x": 580,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4fc56c42.e49b04",
+        "type": "debug",
+        "z": "a4f481d6.61699",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 690,
+        "y": 280,
+        "wires": []
     }
 ]
