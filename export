@@ -285,8 +285,8 @@
         ],
         "seg1": "70",
         "seg2": "90",
-        "x": 710,
-        "y": 80,
+        "x": 390,
+        "y": 260,
         "wires": []
     },
     {
@@ -319,10 +319,10 @@
         "height": "1",
         "name": "Compteur vitesse moyenne",
         "label": "Vitesse moyenne",
-        "format": "{{msg.payload}} km/h",
+        "format": "{{msg.average_speed}} km/h",
         "layout": "row-spread",
-        "x": 720,
-        "y": 140,
+        "x": 980,
+        "y": 320,
         "wires": []
     },
     {
@@ -338,7 +338,7 @@
         "format": "{{msg.payload}} km/h",
         "layout": "row-spread",
         "x": 740,
-        "y": 200,
+        "y": 160,
         "wires": []
     },
     {
@@ -361,10 +361,7 @@
         "y": 160,
         "wires": [
             [
-                "6323a818.a74d58",
-                "63e1ac70.ce4224",
-                "333fc5b1.98c58a",
-                "d1ce7044.672cb"
+                "63e1ac70.ce4224"
             ]
         ]
     },
@@ -570,13 +567,13 @@
                 "98743d94.d1437"
             ],
             [
-                "88016bcb.e720e8"
+                "88016bcb.e720e8",
+                "28cec7c0.c361c8"
             ],
             [
                 "38943042.296b"
             ],
             [
-                "95bebc1c.7b5ca",
                 "58fbbbed.d64594"
             ]
         ]
@@ -606,10 +603,10 @@
         "width": 0,
         "height": 0,
         "name": "",
-        "label": "gsfdg",
-        "format": "{{msg.payload}}",
+        "label": "Vitesse ",
+        "format": "{{msg.payload}} km.h",
         "layout": "row-spread",
-        "x": 630,
+        "x": 640,
         "y": 500,
         "wires": []
     },
@@ -626,7 +623,7 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "x": 650,
-        "y": 540,
+        "y": 620,
         "wires": []
     },
     {
@@ -1060,7 +1057,7 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "x": 630,
-        "y": 580,
+        "y": 660,
         "wires": []
     },
     {
@@ -1088,7 +1085,7 @@
             "67ac202c.09c79"
         ],
         "x": 595,
-        "y": 620,
+        "y": 700,
         "wires": []
     },
     {
@@ -1108,52 +1105,15 @@
         ]
     },
     {
-        "id": "4a3c8bc2.f88034",
-        "type": "inject",
-        "z": "a4f481d6.61699",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "3",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "x": 130,
-        "y": 400,
-        "wires": [
-            [
-                "af61aa63.567238"
-            ]
-        ]
-    },
-    {
-        "id": "d1ce7044.672cb",
-        "type": "function",
-        "z": "a4f481d6.61699",
-        "name": "Vitesse actuelle",
-        "func": "var number = msg.payload;\nmsg.payload = number + \";\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 380,
-        "y": 280,
-        "wires": [
-            [
-                "4fc56c42.e49b04",
-                "585eb25d.40f7fc"
-            ]
-        ]
-    },
-    {
         "id": "af61aa63.567238",
         "type": "function",
         "z": "a4f481d6.61699",
-        "name": "Date du jour",
-        "func": "var msg;\nvar today = new Date();\nvar dd = today.getDate();\nvar mm = today.getMonth() + 1; //January is 0!\n\nvar yyyy = today.getFullYear();\nif (dd < 10) {\n  dd = '0' + dd;\n} \nif (mm < 10) {\n  mm = '0' + mm;\n} \nmsg.filename = '/home/pi/average_speed_' + dd + '_' + mm + '_' + yyyy + '.json';\n\n\nreturn msg;",
+        "name": "Total speed storage",
+        "func": "var msg;\nvar today = new Date();\nvar dd = today.getDate();\nvar mm = today.getMonth() + 1; //January is 0!\n\nvar yyyy = today.getFullYear();\nif (dd < 10) {\n  dd = '0' + dd;\n} \nif (mm < 10) {\n  mm = '0' + mm;\n} \nmsg.filename = '/home/pi/speed-history_' + dd + '_' + mm + '_' + yyyy + '.txt';\nmsg.payload = msg.payload + \";\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 370,
-        "y": 480,
+        "y": 380,
         "wires": [
             [
                 "585eb25d.40f7fc"
@@ -1168,37 +1128,100 @@
         "filename": "",
         "appendNewline": false,
         "createDir": true,
-        "overwriteFile": "true",
-        "x": 910,
-        "y": 480,
+        "overwriteFile": "false",
+        "x": 530,
+        "y": 380,
         "wires": [
             []
         ]
     },
     {
-        "id": "21535e45.82c3d2",
-        "type": "average",
+        "id": "ed5d06ee.68ada8",
+        "type": "comment",
         "z": "a4f481d6.61699",
-        "name": "",
-        "topic": "",
-        "x": 580,
-        "y": 720,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4fc56c42.e49b04",
-        "type": "debug",
-        "z": "a4f481d6.61699",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "x": 690,
-        "y": 280,
+        "name": "average",
+        "info": "ajouter vitesse à une var \nvar = vitesse + var\ntoto++\nvar = vitesse + var \ntoto++\n\n\n\n....\n\n\nave = var / toto",
+        "x": 120,
+        "y": 100,
         "wires": []
+    },
+    {
+        "id": "e78047c5.a64068",
+        "type": "function",
+        "z": "a4f481d6.61699",
+        "name": "Speed storage filename",
+        "func": "var msg;\nvar today = new Date();\nvar dd = today.getDate();\nvar mm = today.getMonth() + 1; //January is 0!\n\nvar yyyy = today.getFullYear();\nif (dd < 10) {\n  dd = '0' + dd;\n} \nif (mm < 10) {\n  mm = '0' + mm;\n} \nmsg.filename = '/home/pi/speed-history_' + dd + '_' + mm + '_' + yyyy + '.txt';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 390,
+        "y": 320,
+        "wires": [
+            [
+                "ccb86858.3776b8"
+            ]
+        ]
+    },
+    {
+        "id": "ccb86858.3776b8",
+        "type": "file in",
+        "z": "a4f481d6.61699",
+        "name": "",
+        "filename": "",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "x": 570,
+        "y": 320,
+        "wires": [
+            [
+                "d8bd4699.7a9148"
+            ]
+        ]
+    },
+    {
+        "id": "d8bd4699.7a9148",
+        "type": "function",
+        "z": "a4f481d6.61699",
+        "name": "average",
+        "func": "var i;\nmsg.total = 0;\n\nmsg.speed_array = msg.payload.split(\";\");\n\nfor (i = 0; i < msg.speed_array.length; i++) { \n    msg.total = msg.total + Number(msg.speed_array[i]);\n}\n\nmsg.array_size = msg.speed_array.length - 1;\n\nmsg.average_speed_unrounded = msg.total / msg.array_size;\n\nmsg.average_speed = Math.round( msg.average_speed_unrounded * 10 ) / 10\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 740,
+        "y": 320,
+        "wires": [
+            [
+                "6323a818.a74d58"
+            ]
+        ]
+    },
+    {
+        "id": "28cec7c0.c361c8",
+        "type": "link out",
+        "z": "3434b36.3db024c",
+        "name": "Valeur de la vitesse",
+        "links": [
+            "d25407fd.645a28"
+        ],
+        "x": 595,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "d25407fd.645a28",
+        "type": "link in",
+        "z": "a4f481d6.61699",
+        "name": "Vitesse",
+        "links": [
+            "28cec7c0.c361c8"
+        ],
+        "x": 115,
+        "y": 380,
+        "wires": [
+            [
+                "af61aa63.567238",
+                "e78047c5.a64068",
+                "333fc5b1.98c58a"
+            ]
+        ]
     }
 ]
